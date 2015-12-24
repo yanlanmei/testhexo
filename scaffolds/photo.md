@@ -1,4 +1,4 @@
-layout: post
+layout: photo
 title: {{ title }}
 date: {{ date }}
 keywords:
@@ -9,4 +9,6 @@ categories:
 tags:
 - 
 toc: true
+photos:
+- http://
 ---

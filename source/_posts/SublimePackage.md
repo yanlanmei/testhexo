@@ -1,12 +1,18 @@
 title: Sublime插件
-date: 2015-12-21 18:29:00
+date: 2015-12-21 18:29:10
 description: 来到GitHub这么长时间，才开始真真的了解GitHub，这个国外的代码托管平台，充满着大牛的身影。
-categories: 工具
-tags: [Sublime,工具,插件]
+categories:
+- 工具
+tags:
+- Sublime
+- 工具
+- 插件
 toc: true
+author:
+comments:
+original:
+permalink: web-style-guide
 ---
-##一、插件的安装
-
 安装有两个办法：
 >1、直接把插件放到它的安装路径对应文件包packages里面去，不知道在哪的可以直接打开 preferences->Browse packages，放进去之后软件会自动检测。
 

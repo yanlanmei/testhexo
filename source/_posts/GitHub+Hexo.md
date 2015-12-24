@@ -1,11 +1,18 @@
 title: 使用GitHub搭建Hexo博客
 date: 2015-12-21 18:29:00
 description: 来到GitHub这么长时间，才开始真真的了解GitHub，这个国外的代码托管平台，充满着大牛的身影。
-categories: 建站
-tags: [博客,Hexo,建站]
+categories:
+- 建站
+tags:
+- 博客
+- 建站
+- Hexo
 toc: true
+author:
+comments:
+original:
+permalink: web-style-guide
 ---
-一、博客站点建设
 来到GitHub这么长时间，才开始真真的了解GitHub，这个国外的代码托管平台，充满着大牛的身影。
 国内也有不多少的代码托管平台，本文将就用GitHub的GitHub Pages 功能来搭建，我的个性博客，[hexo](2)是由Node.js驱动的一款快速、简单且功能强大的博客框架。
 比起WordPress，hexo的搭建更加简洁，配合上markdown的使用，更加便捷的管理自己的学习文档。
@@ -51,6 +58,7 @@ Sublime Text 2 在这里仅仅作为一个文本编辑器使用，支持各种�
 
 ######检查SSH keys的设置
 
+```
     首先我们需要检查你电脑上现有的ssh key：
 
     $ cd ~/. ssh 检查本机的ssh密钥
@@ -63,7 +71,7 @@ Sublime Text 2 在这里仅仅作为一个文本编辑器使用，支持各种�
     Generating public/private rsa key pair.
     Enter file in which to save the key 
     (/Users/your_user_directory/.ssh/id_rsa):<回车就好>
-
+```
 注意1: 此处的邮箱地址，你可以输入自己的邮箱地址；
 注意2: 此处的「-C」的是大写的「C」
 
@@ -128,6 +136,7 @@ Hexo的作者是[tommy351](https://github.com/tommy351/hexo)，根据[官方介�
 
 >2、部署Hexo
 
+```
 在我的电脑中建立一个名字叫「Hexo」的文件夹，然后在此文件夹中右键打开Git Bash。
 
     $ hexo init
@@ -147,10 +156,12 @@ Hexo随后会自动在目标文件夹建立网站所需要的所有文件。
     $ hexo generate #生成静态页面至public目录（最终上传这个文件到GitHub）
 
     $ hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）
+```
 >3、复制cnfeat的主题
 
 以下进入复制主题环节，如果那一步出现问题，或者修改后没有显示修改的结果，建议来来一个，再看看，可以解决很多问题。
 
+```
     $ hexo clean
 
     $ hexo generate #生成静态页面至public目录（最终上传这个文件到GitHub）
@@ -164,7 +175,7 @@ Hexo随后会自动在目标文件夹建立网站所需要的所有文件。
     $ git clone https://github.com/heroicyang/hexo-theme-modernist.git themes/modernist
     jacman
     $ git clone https://github.com/cnfeat/cnfeat.git themes/jacman
-
+```
 
 
 >4、启用cnfeat的主题
@@ -182,6 +193,7 @@ theme: jacman
 注意：为避免出错，请先备份你的_config.yml 文件后再升级
 本地查看调试
 
+```
     $ hexo g #生成
     $ hexo s #启动本地服务，进行文章预览调试
 
@@ -196,6 +208,7 @@ theme: jacman
     hexo g == hexo generate
     hexo s == hexo server
     hexo d == hexo deploy
+```
 >4、浏览器中查看效果
 
 浏览器输入[http://localhost:4000](http://localhost:4000) ，查看搭建效果。此后的每次变更_config.yml文件或者上传文件都可以先用此命令调试，非常好用，尤其是当你想调试出自己想要的主题时。
@@ -206,6 +219,7 @@ theme: jacman
 
 >默认目录结构：
 
+```
     .
     ├── .deploy
     ├── public
@@ -217,9 +231,10 @@ theme: jacman
     ├── themes
     ├── _config.yml
     └── package.json
-
+```
 >hexo/_config.yml
 
+```
     # Hexo Configuration
     ## Docs: http://hexo.io/docs/configuration.html
     ## Source: https://github.com/tommy351/hexo/
@@ -339,35 +354,37 @@ theme: jacman
     type: github
     repository: https://github.com/cnfeat/cnfeat.github.io.git
     branch: master  
-
+```
 
 修改局部页面
 
 页面展现的全部逻辑都在每个主题中控制，源代码在hexo\themes\主题名称\中：
 >hexo\themes\
 
-    .
-    ├── languages  #多语言
-    |   ├── default.yml#默认语言
-    |   └── zh-CN.yml  #中文语言
-    ├── layout #布局，根目录下的*.ejs文件是对主页，分页，存档等的控制
-    |   ├── _partial   #局部的布局，此目录下的*.ejs是对头尾等局部的控制
-    |   └── _widget#小挂件的布局，页面下方小挂件的控制
-    ├── source #源码
-    |   ├── css#css源码 
-    |   |   ├── _base  #*.styl基础css
-    |   |   ├── _partial   #*.styl局部css
-    |   |   ├── fonts  #字体
-    |   |   ├── images #图片
-    |   |   └── style.styl #*.styl引入需要的css源码
-    |   ├── fancybox   #fancybox效果源码
-    |   └── js #javascript源代码
-    ├── _config.yml#主题配置文件
-    └── README.md  #用GitHub的都知道
+```
+├── languages  #多语言
+|   ├── default.yml#默认语言
+|   └── zh-CN.yml  #中文语言
+├── layout #布局，根目录下的*.ejs文件是对主页，分页，存档等的控制
+|   ├── _partial   #局部的布局，此目录下的*.ejs是对头尾等局部的控制
+|   └── _widget#小挂件的布局，页面下方小挂件的控制
+├── source #源码
+|   ├── css#css源码 
+|   |   ├── _base  #*.styl基础css
+|   |   ├── _partial   #*.styl局部css
+|   |   ├── fonts  #字体
+|   |   ├── images #图片
+|   |   └── style.styl #*.styl引入需要的css源码
+|   ├── fancybox   #fancybox效果源码
+|   └── js #javascript源代码
+├── _config.yml#主题配置文件
+└── README.md  #用GitHub的都知道
+```
 
 主题文档的配置
 >hexo\themes/_config.yml
 
+```
     # Header
     menu:
       主页: /
@@ -425,10 +442,13 @@ theme: jacman
     #aboutme: false
     #开启——
     aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+```
+
 发表新文章
 
 #用hexo发表新文章
 
+```
     $ hexo n #写文章 
     其中my new post为文章标题，执行命令后。
     会在项目\source_posts中生成my new post.md文件，用编辑器打开编写即可。
@@ -451,9 +471,10 @@ theme: jacman
     ---
 
     以下正文
-
+```
 >写文章
 
+```
      hexo new [layout] "postName" #新建文章
 
 其中layout是可选参数，默认值为post。
@@ -466,7 +487,7 @@ theme: jacman
     date: { { date } }
     tags:
     ---
-
+```
 请注意，大括号与大括号之间我多加了个空格，否则会被转义，不能正常显示。
 我想添加categories，以免每次手工输入，只需要修改这个文件添加一行，如下：
 

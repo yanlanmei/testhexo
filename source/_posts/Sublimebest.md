@@ -1,13 +1,17 @@
 title: Sublime Text历练
-date: 2015-12-21 18:29:00
+date: 2015-12-21 18:29:20
 description: 来到GitHub这么长时间，才开始真真的了解GitHub，这个国外的代码托管平台，充满着大牛的身影。
-categories: 工具
-tags: [Sublime,工具]
+categories:
+- 工具
+tags:
+- Sublime
+- 工具
 toc: true
+author:
+comments:
+original:
+permalink: web-style-guide
 ---
-
-
-#一、 前言
 Sublime Text是一款跨平台代码编辑器（Code Editor），从最初的Sublime Text 1.0，到现在的Sublime Text 3.0，Sublime Text从一个不知名的编辑器演变到现在几乎是各平台首选的GUI编辑器。[官网地址](http://www.sublimetext.com/2)
 
 ####编辑器的选择（Editor Choices）
