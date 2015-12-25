@@ -10,11 +10,10 @@ toc: true
 author:
 comments:
 original:
-permalink: web-style-guide
+permalink: 
 ---
 Sublime Text是一款跨平台代码编辑器（Code Editor），从最初的Sublime Text 1.0，到现在的Sublime Text 3.0，Sublime Text从一个不知名的编辑器演变到现在几乎是各平台首选的GUI编辑器。[官网地址](http://www.sublimetext.com/2)
-
-####编辑器的选择（Editor Choices）
+## 编辑器的选择（Editor Choices）
 从初学编程到现在，我用过的编辑器有EditPlus、UltraEdit、Notepad++、Vim、TextMate和Sublime Text，如果让我从中推荐，我会毫不犹豫的推荐Vim和Sublime Text，原因有下面几点：
 <!--more-->
 >跨平台：Vim和Sublime Text均为跨平台编辑器（在Linux、OS X和Windows下均可使用）。作为一个程序员，切换系统是常有的事情，为了减少重复学习，使用一个跨平台的编辑器是很有必要的。可扩展：Vim和Sublime Text都是可扩展的（Extensible），并包含大量实用插件，我们可以通过安装自己领域的插件来成倍提高工作效率。互补：Vim和Sublime Text分别是命令行环境（CLI）和图形界面环境（GUI）下的最佳选择，同时使用两者会大大提高工作效率。
@@ -26,8 +25,8 @@ Sublime Text是一款跨平台代码编辑器（Code Editor），从最初的Sub
 我认为应当使用正确的工具去做有价值的事情，并把效率最大化，所以我会用Eclipse编写Java项目，用Vim编写Shell，用Sublime Text编写JavaScript/HTML/Python，用Visual Studio编写C#。
 前言到此结束，下面进入正题。
 
-#二、 界面
->#####1、概况：
+# 二、 界面
+>## 1、概况：
 >1. 从上到下：标题栏Title、菜单栏Menu、标签栏Tab、编辑区Editing Area、控制台Console、状态栏Status Bar。
 >2. 从做到右：侧边栏（可关闭、文件、文件夹视图）、编辑区（代码编辑）、MiniMap（缩略图）。
 
@@ -46,7 +45,7 @@ ASCII编码、Line 6-Column 53（当前行列号）、Tab Size：4（Tab格式�
 >6. 编辑区：
 这是我们主要的工作区域，ST2支持代码自动缩进，代码折叠功能。
 
->#####2、常见的功能：
+>## 2、常见的功能：
 1. 自动完成：
 自动完成的快捷键是Tab，如果在html文件中，输入cl按下tab，即可自动补全为class=””；加上zencoding后，更是如虎添翼，后面再讲到
 2. 多列编辑：
@@ -62,7 +61,7 @@ Auto-Format Tags on Selection 格式化选中的文档，方便我们更清晰�
 6. 人性化设计：
 ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，比如点击一个标签或者括弧，会在起始处显示下划点线，方便看清代码结果，每一层嵌套代码间都有竖线，起到视觉辅助的作用。
 
-#三、 设置
+# 三、 设置
 自定制，数据被保存在Preferences.sublime-settings，Default或User，user可以覆盖default。在配置文件，直接设置
 配置文件在：preferences－setting user。
 下面是一些可能有用但我很少用到的功能：
@@ -78,32 +77,32 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
 
 >调试（Debug）：通过安装插件，Sublime Text可以对代码进行调试。
 
-#四、快捷键
+# 四、快捷键
 若稍有英文基础，则更建议打开Preferences->KeyBindings--Default，这里面是详细的快捷键配置。
 快捷键设置，ST2的快捷键很多，改的时候注意不要覆盖了。
 因为快捷键众多，所以有下面这种组合快捷键，先按下ctrl+k，松开k，再按下j就可以展开全部代码了。
  
  
-####快捷键列表（Shortcuts Cheatsheet）
+# 快捷键列表（Shortcuts Cheatsheet）
 我把本文出现的Sublime Text按其类型整理在这里，以便查阅。
->#####通用（General）
+>### 通用（General）
     ↑↓←→：上下左右移动光标，注意不是不是KJHL！
     Alt：调出菜单
-#####整理（clear）
+### 整理（clear）
     Tab：缩进：自动完成
     Shift+Tab：去除缩进
     Ctrl+KT：折叠属性
     Ctrl+K0：展开所有
-#####窗口（Window）
-#####移动（Move）
+### 窗口（Window）
+### 移动（Move）
     Ctrl+←/→：进行逐词移动
     Ctrl+Shift+←/→进行逐词选择
     Ctrl+↑/↓移动当前显示区域
     Ctrl+Shift+↑/↓移动当前行
     Ctrl+D：选择当前光标所在的词并高亮该词所有出现的位置，再次Ctrl+D选择该词出现的下一个位置，在多重选词的过程中，使用Ctrl+K进行跳过，使用Ctrl+U进行回退，使用Esc退出多重
-#####编辑
+### 编辑
     Ctrl+Shift+L：将当前选中区域打散
-#####文件（File）
+### 文件（File）
     Ctrl+N：在当前窗口创建一个新标签
     Ctrl+O：打开文件
     Ctrl+Shift+T：打开最近关闭的文件
@@ -112,15 +111,15 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Ctrl+Shift+N：创建新窗口
     Ctrl+Shift+W：关闭窗口
     Ctrl+W：关闭当前标签，当窗口内没有标签时会关闭该窗口
-#####编辑（Edit）
+### 编辑（Edit）
     Ctrl+Z：撤销
     Ctrl+Y：恢复
-#####取消选择（Undo Selection）
+### 取消选择（Undo Selection）
     Ctrl+U：智能撤销
     Ctrl+ Shift+U：智能重做
     Ctrl+ Shift+V：粘贴并缩进
     Ctrl+K，Ctrl+V：
-#####行（Line）
+### 行（Line）
     Ctrl +]：缩进
     Ctrl +[：反缩进
     Ctrl + Shift + Up：上移一行 
@@ -128,7 +127,7 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Ctrl + Shift + D：复制行(加倍)
     Ctrl + Shift + K：删除行
     Ctrl + J：连接行
-#####文本（Text）
+### 文本（Text）
     Ctrl+Shift+Enter：在当前行上面增加一行并跳至该行
     Ctrl+Alt+Enter：替换所有关键字匹配
     Ctrl+Enter：在当前行下面新增一行然后跳至该行
@@ -137,15 +136,15 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Ctrl+K，Ctrl+K：从光标处删除至行尾
     Ctrl+K+Backspace：从光标处删除至行首
     Ctrl+T：前后调转
-#####注释（Comment）
+### 注释（Comment）
     Ctrl+/：注释（如已选择内容，同“Ctrl+Shift+/”效果）
     Ctrl+Shift：/：块注释(注释已选择内容)
     Ctrl+Alt+/：块注释，并Focus到首行，写注释说明用的
-#####标签（Tag）
+### 标签（Tag）
     Alt+.：闭合当前标签
     Ctrl+Shift+A：选择标签(可重复)
     Ctrl+Shift+W：选择区域被标签包含
-#####（Mark）
+### （Mark）
     Ctrl+K， Alt+Space：设置记号
     Ctrl+K，Alt+A：选择到记号
     Ctrl+K，Alt+W：删除到记号
@@ -153,23 +152,23 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Ctrl+K，Alt+G：移除记号
     Ctrl+K，Alt+Y：Yank
     Ctrl+K，Alt+J：取消所有折叠
-#####代码折叠（Code Folding）
+### 代码折叠（Code Folding）
     Ctrl+Shift+[：折叠代码
     Ctrl+Shift+]：展开代码
     （Convert Case）
     Ctrl+K，Ctrl+U：改为大写
     Ctrl+K，Ctrl+L：改为小写
-#####（Wrap）
+### （Wrap）
     Alt+Q：
     Ctrl+Space：显示提示
     F9：按行排序
     Ctrl+F9：按行排序(区分大小写)
-#####选择（Selection）
+### 选择（Selection）
     Ctrl+ Shift+L：分割为多光标(选择多行时)
     Ctrl+ Alt +Up：向上一行添加光标
     Ctrl+ Alt +Down：向下一行添加光标
     Escape单光标
-#####扩展（Expand）
+### 扩展（Expand）
     Ctrl+A：全选
     Ctrl+L：选择整行（按住-继续选择下行）
     Ctrl+D：选词：（按住-继续选择下个相同的字符串）
@@ -177,7 +176,7 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Ctrl+Shift+M：快速选择括号间的内容{}
     Ctrl+Shift+J：快速选择同缩进的内容
     Ctrl+Shift+A：选择光标位置父标签对儿
-#####查找（Find）
+### 查找（Find）
     Ctrl+F：进行标准查找
     F3：跳至当前关键字下一个位置
     Shift+F3：跳到当前关键字上一个位置
@@ -191,7 +190,7 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Ctrl+E：字
     Ctrl+Shift+E：字
     Ctrl+Shift+F：多文件搜索&替换
-#####视图（View）
+### 视图（View）
     Ctrl+K，Ctrl+B：侧边栏开关Side Bar
     Ctrl+`：调出控制台
     F11：切换普通全屏
@@ -200,11 +199,11 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Alt+Shift+5：进行上下左右分屏
     Alt+Shift+8：进行上下分屏。
     分屏，使用Ctrl+数字键跳转到指定屏，使用Ctrl+Shift+数字键将当前屏移动到指定屏
-#####组（Group）：
+### 组（Group）：
     Ctrl+K，Ctrl+Up：
     Ctrl+K，Ctrl+ Shift+ Up：
     Ctrl+K，Ctrl+Down：
-#####焦点小组（Focus Group）：
+### 焦点小组（Focus Group）：
     Ctrl+K，Ctrl+Right：
     Ctrl+K，Ctrl+ Left：
     Ctrl+1：组间切换焦点
@@ -213,7 +212,7 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     F6：拼写检查
     Ctrl + F6：下一个错误
     Ctrl+Shift+ F6：上一个错误
-#####跳转（Goto）
+### 跳转（Goto）
     Ctrl+P：跳转到指定文件
     Ctrl+R：跳转到指定符号
     Ctrl+Shift+R：
@@ -221,25 +220,25 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Ctrl+G：跳转到指定行号
     Alt+-：跳转到底部
     Alt+Shift +-：
-#####文件开关（Switch File）
+### 文件开关（Switch File）
     Ctrl+Pagedown：下一个文件
     Ctrl+Pageup：上一个文件
     Ctrl+Tab：下一个文件(stack)
     Ctrl+Shift + Tab：上一个文件(stack)
     Alt+O：
     Alt+1：最近打开文件
-#####滚动（Scroll）
+### 滚动（Scroll）
     Ctrl+K，Ctrl+C：滚动到光标处
     Ctrl+Up：向上滚动一行(定光标)
     Ctrl+Down：向下滚动一行(定光标)
-#####书签（Boolmarks）
+### 书签（Boolmarks）
     Ctrl+F2：设置书签
     F2：下一个书签
     Shift+F2：上一个书签
     Ctrl+Shift+F2：清除书签
     Alt+F2：全选书签
     Ctrl+M：在起始括号和结尾括号间切换
-#####工具（Tools）
+### 工具（Tools）
     Ctrl+Shift+P：调出命令板（Command Palette）
     Ctrl +B：
     Ctrl+Shift+B：
@@ -248,15 +247,15 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Shift+ F4：
     Ctrl +Q：
     Ctrl+Shift+Q：
-#####项目（Project）
+### 项目（Project）
     Ctrl+Alt+P：切换项目
-    #####首选项（Preferences）
+    #### 首选项（Preferences）
     Ctrl+ Keypad Plus：
     Ctrl+Shift+Keypad Plus：
     Help（帮助）
 
-##总结：
-多行游标：
+# 总结：
+## 多行游标：
 ```
 方法一：利用查找替换功能：Ctrl + H
 方法二（推荐）：Ctrl+D选中另一个，如果有某些不想添加新行的模式则按ctrl+K，ctrl+D跳过这个进入下一个符合条件的模式行。
@@ -264,7 +263,7 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
 如果要在每行都加入光标，可以先ctrl+A然后ctrl+shift+L即可。
 如果在某个字符的多行后面加上光标，可以将光标放在这个字符后面，按住shift键，然后右键可以向下拖动产生多个光标。
 ```
-Goto anything：（模糊匹配）
+## Goto anything：（模糊匹配）
 ```
 Ctrl+P：跳转到指定文件，输入文件名后可以：
 @ 符号跳转：输入@symbol跳转到symbol符号所在的位置
@@ -281,7 +280,7 @@ Ctrl+Shift+P：输入set syntax JavaScript进行文件类型更改。
 Ctrl + Enter可以在当前行下新建一行。 
 Ctrl + Shift + Enter可以在当前行上面添加一行。
 ```
-##五、最后购买：
+# 五、最后购买：
 Sublime Text2或者3都没关系，3也只是作为2的beta版本，所以还是推荐3吧，支持新版嘛。2和3在使用方法功能上也有差异~
 你可以去官网下载对应版本，但可能需要输入序列号什么的。访问[下载 2.x 版本](http://www.sublimetext.com/2)。或从[下载 3.x 版本](http://www.sublimetext.com/3)。
 
@@ -316,10 +315,10 @@ E1D0AE85 A0BBD039 0E9C8D55 E1B89D5D
 B98FC99C 8FAC73EE D2B95564 DF450523
 ------ END LICENSE ------
  ```
-#六、汉化：
+# 六、汉化：
 可以网上找些中文包放进去就行了。
 [Sublime Text 全程指南：](http://lucida.me/blog/sublime-text-complete-guide/ )
-#七、延伸阅读（Further Reading）：
+# 七、延伸阅读（Further Reading）：
 1、书籍（Books）
 Mastering Sublime Text：我读过的唯一一本关于Sublime Text的书籍，书中介绍的插件很实用，但对编辑技巧介绍不全。
 Instant Sublime Text Starter：另外一本关于Sublime Text的书，我没有读过。
@@ -336,7 +335,7 @@ Stack Overflow的Sublime Text频道：
  [Getting Started with SublimeText：](https://www.youtube.com/watch?v=04gKiTiRlq8)
  [Sublime Text Pefect Workflow：](https://www.youtube.com/watch?v=bpEp0ePIOEM&list=PLuwqxbvf3olpLsnFvo06gbrkcEB5o7K0g)
 
-#插件：
+# 插件：
 插件的选择：
 主题：blackboard 
 SideBarEnhancements（侧边栏增强，添加浏览器） 
@@ -355,7 +354,7 @@ snippets（自定制代码补齐机制）
 
 
 
-#[快捷代码：]()
+# [快捷代码：]()
 1. 跳到行首行尾的快捷键
 ```
     [

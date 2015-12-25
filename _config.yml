@@ -68,6 +68,14 @@ disqus_shortname:
 ## Themes: http://hexo.io/themes/
 theme: spfk
 
+
+# 自动生成sitemap
+sitemap:
+path: sitemap.xml
+baidusitemap:
+path: baidusitemap.xml
+
+
 # Deployment 站点部署到github要配置，上一节中已经讲过
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
 deploy:

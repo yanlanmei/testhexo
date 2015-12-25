@@ -11,7 +11,7 @@ toc: true
 author:
 comments:
 original:
-permalink: web-style-guide
+permalink:
 ---
 安装有两个办法：
 >1、直接把插件放到它的安装路径对应文件包packages里面去，不知道在哪的可以直接打开 preferences->Browse packages，放进去之后软件会自动检测。
