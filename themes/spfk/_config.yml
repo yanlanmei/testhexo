@@ -38,7 +38,7 @@ subnav:
 background_image: 1
 
 # Content
-excerpt_link: 大航海时代 #修改more>>的文字
+excerpt_link: 大航海 #修改more>>的文字
 fancybox: true
 mathjax: true
 
@@ -76,6 +76,7 @@ friends:
   Litten: http://litten.github.io/
   MOxFIVE: http://MOxFIVE.github.io/
   岳宇星: http://yueyuxing.github.io/
+  DoubleV: http://www.vsay.cn/
   JackieWu: http://www.wuchenglong.com/
   zipperary: http://zippera.github.io/
   堂主: http://www.osmn00.com/translation/221.html

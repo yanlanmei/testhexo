@@ -30,6 +30,7 @@ vim themes/light/layout/_partial/article.ejs
 <%-partial('post/share')%>
 替换为刚刚获取的分享代码
 
+32px
 <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_print" data-cmd="print" title="分享到打印"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
@@ -43,6 +44,17 @@ vim themes/light/layout/_partial/article.ejs
         margin: auto;
       }
     }
+
+24px
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_print" data-cmd="print" title="分享到打印"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+D:\Hexo\Hexo\themes\spfk\source\css\_partial\article.styl
+
+.bdshare-button-style2-24{
+  width: 248px;
+  margin: auto;
+}
 ```
 
 # 安装百度统计
@@ -77,6 +89,7 @@ vim hexo/themes/light/layout/_partial/head.ejs
 ```
 
 # 不蒜子
+## 代码修改
 themes/你的主题/layout/_partial/footer.ejs
 
 ```
@@ -105,4 +118,23 @@ themes/你的主题/layout/_partial/footer.ejs
     </div><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
 </footer>
+```
+
+## 样式美化
+移动端出现上移themes\spfk\source\css\_partial\mobile.styl
+```
+#footer {
+    bottom: 10px;
+    .footer-left{
+        float: initial;
+        margin-bottom: 10px;
+    }
+    .footer-right{
+        float: initial;
+        margin-bottom: 10px;
+    }
+}
+#container .visit {
+    margin-top: 1em;
+}
 ```
