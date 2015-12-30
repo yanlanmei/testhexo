@@ -2,10 +2,8 @@ title: 为Hexo博客添加目录
 date: 2015-12-26 18:29:00
 description: 
 categories:
-- 建站
+- Hexo
 tags:
-- 博客
-- 建站
 - Hexo
 toc: true
 author:
@@ -13,13 +11,10 @@ comments:
 original:
 permalink: 
 ---
-
 　　**自用笔记：**本文属于自用笔记，不做详解，仅供参考。
 　　在此记录自己已理解并开始遵循的前端代码规范。What How Why
 　　最近，使用Hexo遇到了很多问题，在设立进行整理。
-
 <!-- more -->
-
 # 为Hexo博客添加目录
 ## 文章目录
 1. 修改Landscape主题的ejs文件

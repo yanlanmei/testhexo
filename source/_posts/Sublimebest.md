@@ -2,20 +2,23 @@ title: Sublime Text历练
 date: 2015-12-21 18:29:20
 description: 来到GitHub这么长时间，才开始真真的了解GitHub，这个国外的代码托管平台，充满着大牛的身影。
 categories:
-- 工具
+- Tool
 tags:
 - Sublime
-- 工具
 toc: true
 author:
 comments:
 original:
 permalink: 
 ---
+　　** 自用笔记：**本文属于自用笔记，不做详解，仅供参考。
+　　在此记录自己已理解并开始遵循的前端代码规范。What How Why
+　　最近，使用Hexo遇到了很多问题，在设立进行整理。
+<!--more-->
 Sublime Text是一款跨平台代码编辑器（Code Editor），从最初的Sublime Text 1.0，到现在的Sublime Text 3.0，Sublime Text从一个不知名的编辑器演变到现在几乎是各平台首选的GUI编辑器。[官网地址](http://www.sublimetext.com/2)
 ## 编辑器的选择（Editor Choices）
 从初学编程到现在，我用过的编辑器有EditPlus、UltraEdit、Notepad++、Vim、TextMate和Sublime Text，如果让我从中推荐，我会毫不犹豫的推荐Vim和Sublime Text，原因有下面几点：
-<!--more-->
+
 >跨平台：Vim和Sublime Text均为跨平台编辑器（在Linux、OS X和Windows下均可使用）。作为一个程序员，切换系统是常有的事情，为了减少重复学习，使用一个跨平台的编辑器是很有必要的。可扩展：Vim和Sublime Text都是可扩展的（Extensible），并包含大量实用插件，我们可以通过安装自己领域的插件来成倍提高工作效率。互补：Vim和Sublime Text分别是命令行环境（CLI）和图形界面环境（GUI）下的最佳选择，同时使用两者会大大提高工作效率。
 
 >优点：自动保存代码，代码高亮、语法提示、自动完成且反应快速。少用鼠标，多用键盘。

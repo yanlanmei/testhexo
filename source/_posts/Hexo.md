@@ -2,10 +2,8 @@ title: Hexo的使用介绍
 date: 2015-12-25 18:29:00
 description: 
 categories:
-- 建站
+- Hexo
 tags:
-- 博客
-- 建站
 - Hexo
 toc: true
 author:

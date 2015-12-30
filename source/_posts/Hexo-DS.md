@@ -2,10 +2,8 @@ title: 为Hexo多说样式美化
 date: 2015-12-26 18:29:00
 description: 
 categories:
-- 建站
+- Hexo
 tags:
-- 博客
-- 建站
 - Hexo
 toc: true
 author:

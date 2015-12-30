@@ -2,10 +2,8 @@ title: 使用GitHub搭建Hexo博客
 date: 2015-12-21 18:29:00
 description: 来到GitHub这么长时间，才开始真真的了解GitHub，这个国外的代码托管平台，充满着大牛的身影。
 categories:
-- 建站
+- Hexo
 tags:
-- 博客
-- 建站
 - Hexo
 toc: true
 author:
@@ -625,6 +623,11 @@ hexo中所有文件的编码格式均是UTF-8。
 
 我的办法是这样的，先在一个目录下做好Node+Git+Hexo的绿色环境，写个 hexos.bat 可以一键启动hexo工作台，把整个目录用Dropbox同步，这样随便在办公室或家的任何笔记本台式机都可以写博客，也不用处理什么文件拷贝备份的事情，非常爽。
 
+
+## 参考资料：
+[hexo你的博客](http://ibruce.info/2013/11/22/hexo-your-blog/)
+[如何搭建一个独立博客——简明Github Pages与Hexo教程](http://www.jianshu.com/p/05289a4bc8b2#)
+[]()
 
 [0][GitHub](https://github.com/)
 [1][GitHub Pages](https://pages.github.com/)

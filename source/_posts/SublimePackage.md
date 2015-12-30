@@ -2,22 +2,24 @@ title: Sublime插件
 date: 2015-12-21 18:29:10
 description: 来到GitHub这么长时间，才开始真真的了解GitHub，这个国外的代码托管平台，充满着大牛的身影。
 categories:
-- 工具
+- Tool
 tags:
 - Sublime
-- 工具
-- 插件
 toc: true
 author:
 comments:
 original:
 permalink:
 ---
+　　** 自用笔记：**本文属于自用笔记，不做详解，仅供参考。
+　　在此记录自己已理解并开始遵循的前端代码规范。What How Why
+　　最近，使用Hexo遇到了很多问题，在设立进行整理。
+<!--more-->
 安装有两个办法：
 >1、直接把插件放到它的安装路径对应文件包packages里面去，不知道在哪的可以直接打开 preferences->Browse packages，放进去之后软件会自动检测。
 
 >2、使用命令方式直接让软件自己下载安装。（使用package control组件）（前提：先安装下面那个package control插件)
-<!--more-->
+
 >按下Ctrl+Shift+P调出命令面板，输入install， 调出 Install Package 选项并回车，然后在列表中选中要安装的插件。
 
 >下载拷贝：然后把它放到package文件包中。没用过Github的朋友不知道在哪里下载。Download ZIP。然后把它解压，把文件夹放进package文件包，然后它就能检测到包啦！

@@ -2,10 +2,8 @@ title: Hexo插件安装
 date: 2015-12-27 18:29:00
 description: 
 categories:
-- 建站
+- Hexo
 tags:
-- 博客
-- 建站
 - Hexo
 toc: true
 author:
@@ -19,7 +17,50 @@ permalink:
 　　最近，使用Hexo遇到了很多问题，在设立进行整理。
 
 <!-- more -->
-# 安装分享按钮
+## 同步instagram图片
+
+### 新建页面
+
+```
+执行命令：
+hexo new page "instagram"
+```
+### 修改文件
+
+```
+在目录yourBlog\source\instagram下，修改index.md内容为：
+
+---
+layout: post
+slug: "instagram"
+title: "相册"
+noDate: "true"
+---
+
+<div class="instagram" data-client-id="a0d4bd    ab154b4c689aff70602cb34a2c" data-user-id="438522285">
+    <a href="http://instagram.com/litten225" target="_blank" class="open-ins">图片来自instagram，正在加载中…</a>
+</div>
+<script src="/js/jquery.lazyload.js"></script>
+<script src="/js/instagram.js"></script>
+```
+### 获取ID
+data-client-id：
+[注册新客户端](http://instagram.com/developer/clients/manage/)
+获取CLIENT ID：a0d4bdab154b4c689aff70602cb34a2c
+用client_id去换取token：
+在浏览器中请求：
+
+    https://instagram.com/oauth/authorize/?client_id={CLIENT_ID}&redirect_uri={REDIRECT_URI}&response_type=token
+    https://instagram.com/oauth/authorize/?client_id=a0d4bdab154b4c689aff70602cb34a2c&redirect_uri=http://luuman.github.io/&response_type=token
+    花括号里面的值，对应上一步最终得到的client_id和自己设定的redirect_uri。
+    请求到的是一个授权页面，授权完毕后，则重定向到你的redirect_uri。
+    注意看授权成功后的url，hash部分会附带给你的token。至此，token成功获取。
+
+data-user-id：
+
+需要到[lookup-user-id](http://jelled.com/instagram/lookup-user-id#)填写用户名并查找。
+
+## 安装分享按钮
 
 ```
 去百度分享获取分享代码
@@ -57,9 +98,9 @@ D:\Hexo\Hexo\themes\spfk\source\css\_partial\article.styl
 }
 ```
 
-# 安装百度统计
+## 安装百度统计
 
-去百度统计获取统计代码
+### 去百度统计获取统计代码
 
 ```
 vim themes/light/layout/_partial/baidu_analytics.ejs
@@ -88,11 +129,12 @@ vim hexo/themes/light/layout/_partial/head.ejs
 </head>
 ```
 
-# 不蒜子
-## 代码修改
-themes/你的主题/layout/_partial/footer.ejs
+## 不蒜子
+### 代码修改
 
 ```
+themes/你的主题/layout/_partial/footer.ejs
+
 <footer id="footer">
     <div class="outer">
         <div id="footer-info">
@@ -120,7 +162,8 @@ themes/你的主题/layout/_partial/footer.ejs
 </footer>
 ```
 
-## 样式美化
+### 样式美化
+
 移动端出现上移themes\spfk\source\css\_partial\mobile.styl
 ```
 #footer {
@@ -138,3 +181,55 @@ themes/你的主题/layout/_partial/footer.ejs
     margin-top: 1em;
 }
 ```
+
+
+## 添加版权声明
+
+### 添加代码
+
+```
+\layout\_partial\post\nav.ejs
+
+<% if (post.original != false && !is_page()){ %>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
+        <p><span>文章作者:</span><a href="/" title="请访问 <%=theme.author%> 博客"><%=theme.author%></a></p>
+        <!-- <p><span>发布时间:</span><%= post.date.format("YYYY年MM月DD日 - HH时mm分") %></p> -->
+        <!-- <p><span>最后更新:</span><%= post.updated.format("YYYY年MM月DD日 - HH时mm分") %></p> -->
+        <p>
+            <span>原始链接:</span><a class="post-url" href="<%- url_for(post.path) %>" title="<%= post.title %>"><%= post.permalink %></a>
+            <span class="copy-path" data-clipboard-text="原文: <%= post.permalink %>　　作者: <%=theme.author%>" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+<% } %>
+
+<% if (post.prev || post.next){ %>
+<nav id="article-nav">
+  <% if (post.prev){ %>
+    <a href="<%- url_for(post.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        <% if (post.prev.title){ %>
+          <%= post.prev.title %>
+        <% } else { %>
+          (no title)
+        <% } %>
+      </div>
+    </a>
+  <% } %>
+  <% if (post.next){ %>
+    <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"><%= post.next.title %></div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  <% } %>
+</nav>
+<% } %>
+```
+
+### 修改样式
