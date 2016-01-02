@@ -15,24 +15,7 @@ permalink:
 　　在此记录自己已理解并开始遵循的前端代码规范。What How Why
 　　最近，使用Hexo遇到了很多问题，在设立进行整理。
 <!-- more -->
-### 百度分享图片修改
-由于博客已经建站，字体包，将class的名称就改了，改变分享效果
 
-同时修改侧边栏图标，加大半径，色彩。
-<div class="bdsharebuttonbox">
-	<a href="#" class="bds_more" data-cmd="more"></a>
-	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-	<a href="#" class="bds_print" data-cmd="print" title="分享到打印"></a>
-	<a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-	<a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
-	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-	<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-</div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-### 添加版权声明
-参照M的版权声明，进行修改！
 
 
 ### 想办法添加作品介绍页面
@@ -58,20 +41,49 @@ https://github.com/hexojs/site/blob/master/themes/navy/layout/plugins.swig
 ### Instagram图片显示
 移动端图片显示效果有待修改，应该不可以滑动，全屏填充。
 
+### 2016 年 01 月
+
+### 1-2 添加目录
+
+> - [W][Hexo博客系统][7] Hexo博客系统的核心支持生成目录（Table of Contents），但其默认的主题Landscape并不支持目录的显示。
+> - [[W]][7]  为Hexo博客添加目录
+> - [[W]][8] 为Hexo博客添加目录
+
+[8]: /2015/12/27/Hexo-plug/#u4E3AHexo_u535A_u5BA2_u6DFB_u52A0_u76EE_u5F55 "为Hexo博客添加目录 left-col.ejs"
+[7]: http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/ "为Hexo博客添加目录 left-col.ejs"
+
+
+
+
 ### 2015 年 12 月
+
+### 12-31 社交账号图标修改
+去除图片，将图标更换成字体文件，通过查看，得知系统通过自己设定的社交账号链接，进行自动生成\themes\spfk\layout\_partial\left-col.ejs
+
+> - [[W]][6] 社交账号图标修改
+结果发现还有很多图标，fontawesome-webfont没有，了解图标的逻辑。
+
+[6]: /2015/12/27/Hexo-plug/#u5B89_u88C5_u5206_u4EAB_u6309_u94AE "社交账号图标修改 left-col.ejs"
+
+### 12-31 百度分享图片修改
+由于博客已经建站，字体包，将class的名称就改了，改变分享效果
+
+> - [[W]][5] 百度分享美化
+
+[5]: /2015/12/27/Hexo-plug/#u5B89_u88C5_u5206_u4EAB_u6309_u94AE "百度分享美化 article.ejs"
 
 ### 12-30 添加版权声明
 参照M的版权声明，进行修改！
 > - [[W]][4] 添加版权声明，修改样式
 
-[4]: http://instagram.com/2015/12/27/Hexo-plug/#u6DFB_u52A0_u7248_u6743_u58F0_u660E "添加版权声明 nav.ejs"
+[4]: /2015/12/27/Hexo-plug/#u6DFB_u52A0_u7248_u6743_u58F0_u660E "添加版权声明 nav.ejs"
 
 ### 12-29 侧边栏
 侧边栏图片背景的设置，要和？再次看了感觉还好，就不改了。
 
 ### 12-28 instagram图片拉取
 添加instagram图片，展示自己的摄影爱好。
-> - [[W]][0] instagram归纳与改进
+> - [[W]][0] instagram总结
 > - [[W]][1] instagram图片拉取小经验
 > - [[W]][2] 管理客户端页面
 > - [[W]][3] Lookup Your Instagram User ID
@@ -79,7 +91,7 @@ https://github.com/hexojs/site/blob/master/themes/navy/layout/plugins.swig
 [3]: http://jelled.com/instagram/lookup-user-id "Lookup Your Instagram User ID"
 [2]: http://instagram.com/developer/clients/manage/ "管理客户端页面"
 [1]: http://litten.github.io/2014/03/03/instagram-api-ex/ "instagram图片拉取小经验"
-[0]: http://luuman.github.io/2015/12/27/Hexo-plug/ "instagram: 教程总结"
+[0]: /2015/12/27/Hexo-plug/#u540C_u6B65instagram_u56FE_u7247 "instagram: 教程总结"
 
 
 
