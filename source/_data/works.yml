@@ -1,0 +1,9 @@
+- name: 移动聊天页面
+  description: 简单的移动聊天界面，仿照微信界面。
+  link: http://luuman.github.com/Works/blob/gh-pages/Mobile/WeChat/Wechats/index.zip
+  preview: http://luuman.github.com/Works/blob/gh-pages/Mobile/WeChat/Wechats/index.html
+  imgs: https://raw.githubusercontent.com/luuman/Works/gh-pages/Mobile/WeChat/Wechats/WeChat.jpg
+  tags:
+    - 移动
+    - 聊天
+    - 微信
