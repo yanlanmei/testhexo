@@ -1,0 +1,51 @@
+- name: Wechats移动聊天页面
+  description: 简单的移动聊天界面，仿照微信界面。
+  link: http://luuman.github.com/Works/Mobile/WeChat/Wechats/WeChat.zip
+  preview: http://luuman.github.io/Works/Mobile/WeChat/Wechats/index.html
+  imgs: https://raw.githubusercontent.com/luuman/Works/gh-pages/Mobile/WeChat/Wechats/WeChat.jpg
+  tags:
+    - 移动
+    - 聊天
+    - 微信
+- name: DODI-Chat移动聊天页面
+  description: 简单的移动聊天界面，仿照微信界面。
+  link: http://luuman.github.com/Works/Mobile/WeChat/DODI-Chat/WeChat.zip
+  preview: http://luuman.github.io/Works/Mobile/WeChat/DODI-Chat/index.html
+  imgs: https://raw.githubusercontent.com/luuman/Works/gh-pages/Mobile/WeChat/DODI-Chat/WeChat.jpg
+  tags:
+    - 移动
+    - 聊天
+    - 微信
+- name: chat-message移动聊天页面
+  description: 简单的移动聊天界面，仿照微信界面。
+  link: http://luuman.github.com/Works/Mobile/WeChat/chat-message/WeChat.zip
+  preview: http://luuman.github.io/Works/Mobile/WeChat/chat-message/index.html
+  imgs: https://raw.githubusercontent.com/luuman/Works/gh-pages/Mobile/WeChat/chat-message/WeChat.jpg
+  tags:
+    - 移动
+    - 聊天
+    - 微信
+- name: Cool-chat移动聊天页面
+  description: 简单的移动聊天界面，仿照微信界面。
+  link: http://luuman.github.com/Works/Mobile/WeChat/Cool-chat/WeChat.zip
+  preview: http://luuman.github.io/Works/Mobile/WeChat/Cool-chat/index.html
+  imgs: https://raw.githubusercontent.com/luuman/Works/gh-pages/Mobile/WeChat/Cool-chat/WeChat.jpg
+  tags:
+    - 移动
+    - 聊天
+    - 微信
+- name: css3-chat-window移动聊天页面
+  description: 简单的移动聊天界面，仿照微信界面。
+  link: http://luuman.github.com/Works/Mobile/WeChat/css3-chat-window/WeChat.zip
+  preview: http://luuman.github.io/Works/Mobile/WeChat/css3-chat-window/index.html
+  imgs: https://raw.githubusercontent.com/luuman/Works/gh-pages/Mobile/WeChat/css3-chat-window/WeChat.jpg
+  tags:
+    - 移动
+    - 聊天
+    - 微信
+
+
+
+
+
+    

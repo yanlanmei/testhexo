@@ -11,25 +11,25 @@ comments:
 original:
 permalink: 
 ---
-　　** 自用笔记：**本文属于自用笔记，不做详解，仅供参考。
-　　在此记录自己已理解并开始遵循的前端代码规范。What How Why
-　　最近，使用Hexo遇到了很多问题，在设立进行整理。
-<!--more-->
-Sublime Text是一款跨平台代码编辑器（Code Editor），从最初的Sublime Text 1.0，到现在的Sublime Text 3.0，Sublime Text从一个不知名的编辑器演变到现在几乎是各平台首选的GUI编辑器。[官网地址](http://www.sublimetext.com/2)
+---
+　　**自用笔记：**本文属于自用笔记，不做详解，仅供参考。在此记录自己已理解并开始遵循的前端代码规范。What How Why
+<!-- more -->
 ## 编辑器的选择（Editor Choices）
+Sublime Text是一款跨平台代码编辑器（Code Editor），从最初的Sublime Text 1.0，到现在的Sublime Text 3.0，Sublime Text从一个不知名的编辑器演变到现在几乎是各平台首选的GUI编辑器。[官网地址](http://www.sublimetext.com/2)
 从初学编程到现在，我用过的编辑器有EditPlus、UltraEdit、Notepad++、Vim、TextMate和Sublime Text，如果让我从中推荐，我会毫不犹豫的推荐Vim和Sublime Text，原因有下面几点：
 
->跨平台：Vim和Sublime Text均为跨平台编辑器（在Linux、OS X和Windows下均可使用）。作为一个程序员，切换系统是常有的事情，为了减少重复学习，使用一个跨平台的编辑器是很有必要的。可扩展：Vim和Sublime Text都是可扩展的（Extensible），并包含大量实用插件，我们可以通过安装自己领域的插件来成倍提高工作效率。互补：Vim和Sublime Text分别是命令行环境（CLI）和图形界面环境（GUI）下的最佳选择，同时使用两者会大大提高工作效率。
+>1. 跨平台：Vim和Sublime Text均为跨平台编辑器（在Linux、OS X和Windows下均可使用）。作为一个程序员，切换系统是常有的事情，为了减少重复学习，使用一个跨平台的编辑器是很有必要的。可扩展：Vim和Sublime Text都是可扩展的（Extensible），并包含大量实用插件，我们可以通过安装自己领域的插件来成倍提高工作效率。互补：Vim和Sublime Text分别是命令行环境（CLI）和图形界面环境（GUI）下的最佳选择，同时使用两者会大大提高工作效率。
 
->优点：自动保存代码，代码高亮、语法提示、自动完成且反应快速。少用鼠标，多用键盘。
+>1. 优点：自动保存代码，代码高亮、语法提示、自动完成且反应快速。少用鼠标，多用键盘。
 编辑器（Editor） vs 集成开发环境（Integrated Development Environment，下文简称IDE）
+
 我经常看到一些程序员拿编辑器和IDE进行比较，诸如Vim比Eclipse强大或是Visual Studio太慢不如Notepad++好使之类的讨论比比皆是，个人认为这些讨论没有意义，因为编辑器和IDE根本是面向两种不同使用场景的工具：
 编辑器面向无语义的纯文本，不涉及领域逻辑，因此速度快体积小，适合编写单独的配置文件和动态语言脚本（Shell、Python和Ruby等）。IDE面向有语义的代码，会涉及到大量领域逻辑，因此速度偏慢体积庞大，适合编写静态语言项目（Java、C++和C#等）。
 我认为应当使用正确的工具去做有价值的事情，并把效率最大化，所以我会用Eclipse编写Java项目，用Vim编写Shell，用Sublime Text编写JavaScript/HTML/Python，用Visual Studio编写C#。
 前言到此结束，下面进入正题。
 
-# 二、 界面
->## 1、概况：
+## 界面
+>1、概况：
 >1. 从上到下：标题栏Title、菜单栏Menu、标签栏Tab、编辑区Editing Area、控制台Console、状态栏Status Bar。
 >2. 从做到右：侧边栏（可关闭、文件、文件夹视图）、编辑区（代码编辑）、MiniMap（缩略图）。
 
@@ -48,7 +48,7 @@ ASCII编码、Line 6-Column 53（当前行列号）、Tab Size：4（Tab格式�
 >6. 编辑区：
 这是我们主要的工作区域，ST2支持代码自动缩进，代码折叠功能。
 
->## 2、常见的功能：
+>2、常见的功能：
 1. 自动完成：
 自动完成的快捷键是Tab，如果在html文件中，输入cl按下tab，即可自动补全为class=””；加上zencoding后，更是如虎添翼，后面再讲到
 2. 多列编辑：
@@ -64,7 +64,7 @@ Auto-Format Tags on Selection 格式化选中的文档，方便我们更清晰�
 6. 人性化设计：
 ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，比如点击一个标签或者括弧，会在起始处显示下划点线，方便看清代码结果，每一层嵌套代码间都有竖线，起到视觉辅助的作用。
 
-# 三、 设置
+## 设置
 自定制，数据被保存在Preferences.sublime-settings，Default或User，user可以覆盖default。在配置文件，直接设置
 配置文件在：preferences－setting user。
 下面是一些可能有用但我很少用到的功能：
@@ -80,14 +80,16 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
 
 >调试（Debug）：通过安装插件，Sublime Text可以对代码进行调试。
 
-# 四、快捷键
+## 快捷键
 若稍有英文基础，则更建议打开Preferences->KeyBindings--Default，这里面是详细的快捷键配置。
 快捷键设置，ST2的快捷键很多，改的时候注意不要覆盖了。
 因为快捷键众多，所以有下面这种组合快捷键，先按下ctrl+k，松开k，再按下j就可以展开全部代码了。
  
  
-# 快捷键列表（Shortcuts Cheatsheet）
+快捷键列表（Shortcuts Cheatsheet）
 我把本文出现的Sublime Text按其类型整理在这里，以便查阅。
+
+```
 >### 通用（General）
     ↑↓←→：上下左右移动光标，注意不是不是KJHL！
     Alt：调出菜单
@@ -256,9 +258,10 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
     Ctrl+ Keypad Plus：
     Ctrl+Shift+Keypad Plus：
     Help（帮助）
+```
 
-# 总结：
-## 多行游标：
+## 总结：
+### 多行游标：
 ```
 方法一：利用查找替换功能：Ctrl + H
 方法二（推荐）：Ctrl+D选中另一个，如果有某些不想添加新行的模式则按ctrl+K，ctrl+D跳过这个进入下一个符合条件的模式行。
@@ -266,7 +269,7 @@ ST2虽然还是beta版中，但是有很多设计细节还是值得称赞的，�
 如果要在每行都加入光标，可以先ctrl+A然后ctrl+shift+L即可。
 如果在某个字符的多行后面加上光标，可以将光标放在这个字符后面，按住shift键，然后右键可以向下拖动产生多个光标。
 ```
-## Goto anything：（模糊匹配）
+### Goto anything：（模糊匹配）
 ```
 Ctrl+P：跳转到指定文件，输入文件名后可以：
 @ 符号跳转：输入@symbol跳转到symbol符号所在的位置
@@ -283,7 +286,10 @@ Ctrl+Shift+P：输入set syntax JavaScript进行文件类型更改。
 Ctrl + Enter可以在当前行下新建一行。 
 Ctrl + Shift + Enter可以在当前行上面添加一行。
 ```
-# 五、最后购买：
+
+
+
+## 最后购买：
 Sublime Text2或者3都没关系，3也只是作为2的beta版本，所以还是推荐3吧，支持新版嘛。2和3在使用方法功能上也有差异~
 你可以去官网下载对应版本，但可能需要输入序列号什么的。访问[下载 2.x 版本](http://www.sublimetext.com/2)。或从[下载 3.x 版本](http://www.sublimetext.com/3)。
 
@@ -318,10 +324,42 @@ E1D0AE85 A0BBD039 0E9C8D55 E1B89D5D
 B98FC99C 8FAC73EE D2B95564 DF450523
 ------ END LICENSE ------
  ```
-# 六、汉化：
+
+## 汉化：
 可以网上找些中文包放进去就行了。
 [Sublime Text 全程指南：](http://lucida.me/blog/sublime-text-complete-guide/ )
-# 七、延伸阅读（Further Reading）：
+
+
+## 插件：
+插件的选择：
+主题：blackboard 
+SideBarEnhancements（侧边栏增强，添加浏览器） 
+Zen Coding  
+advanceNewfile
+SyncedSideBar
+tag
+
+JsFormat（javascript格式化） 
+ColorPicker （调色盘） 
+GBK to UTF8
+GBK Encoding Support（GBK中文编码）
+SublimeLinter（代码错误提示） 总体架构
+snippets（自定制代码补齐机制）
+
+## [快捷代码：]()
+1. 跳到行首行尾的快捷键
+```
+    [
+        //跳到行首行尾的快捷键
+        { "keys": ["ctrl+k", "ctrl+h"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+        { "keys": ["ctrl+k", "ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} }
+    ]
+```
+先按ctrl+k，然后按ctrl+h（home首字母）光标移动到行首；先按ctrl+k，然后按ctrl+e（end首字母）光标移动到行尾。
+
+
+
+## 延伸阅读（Further Reading）：
 1、书籍（Books）
 Mastering Sublime Text：我读过的唯一一本关于Sublime Text的书籍，书中介绍的插件很实用，但对编辑技巧介绍不全。
 Instant Sublime Text Starter：另外一本关于Sublime Text的书，我没有读过。
@@ -337,33 +375,3 @@ Stack Overflow的Sublime Text频道：
 3、视频（Videos）
  [Getting Started with SublimeText：](https://www.youtube.com/watch?v=04gKiTiRlq8)
  [Sublime Text Pefect Workflow：](https://www.youtube.com/watch?v=bpEp0ePIOEM&list=PLuwqxbvf3olpLsnFvo06gbrkcEB5o7K0g)
-
-# 插件：
-插件的选择：
-主题：blackboard 
-SideBarEnhancements（侧边栏增强，添加浏览器） 
-Zen Coding  
-advanceNewfile
-SyncedSideBar
-tag
-
-
-JsFormat（javascript格式化） 
-ColorPicker （调色盘） 
-GBK to UTF8
-GBK Encoding Support（GBK中文编码）
-SublimeLinter（代码错误提示） 总体架构
-snippets（自定制代码补齐机制）
-
-
-
-# [快捷代码：]()
-1. 跳到行首行尾的快捷键
-```
-    [
-        //跳到行首行尾的快捷键
-        { "keys": ["ctrl+k", "ctrl+h"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-        { "keys": ["ctrl+k", "ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} }
-    ]
-```
-先按ctrl+k，然后按ctrl+h（home首字母）光标移动到行首；先按ctrl+k，然后按ctrl+e（end首字母）光标移动到行尾。

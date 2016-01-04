@@ -4,7 +4,7 @@ description:
 categories:
 - Hexo
 tags:
-- Hexos
+- Hexo
 toc: true
 author:
 comments:
@@ -17,10 +17,11 @@ permalink:
 
 
 
+### Wiki
 
+聚沙成塔，记录碎片化信息，构筑个人知识体系
 
-### 多说样式修改
-多说样式，被顶起的页面显示效果，还是不太好。
+### 语法高亮样式修改
 
 ### 多说表情溢出
 移动端，多说表情溢出，将页面撑开。
@@ -35,7 +36,7 @@ permalink:
 
 ### 1-3 想办法添加作品介绍页面
 根据[Hexo][ ]官网的主题介绍，添加标签、名称、图片、介绍放置自己的作品。
-最终还是把这个页面弄出来了，但是还有很多地方需要修改，因为是响应式的页面，还有很多地方要优化。
+最终还是把这个页面弄出来了，但是还有很多地方需要修改，因为是响应式的页面，还有很多地方要优化。还有window.serch.index没有解决。
 
 > - [[W]][9] 为Hexo博客添加作品介绍页面
 > - [[W]][10] 为Hexo site[[W]][11][[W]][12]添加目录
@@ -53,9 +54,6 @@ permalink:
 
 [8]: /2015/12/27/Hexo-plug/#u4E3AHexo_u535A_u5BA2_u6DFB_u52A0_u76EE_u5F55 "为Hexo博客添加目录 left-col.ejs"
 [7]: http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/ "为Hexo博客添加目录 left-col.ejs"
-
-
-
 
 ### 2015 年 12 月
 
@@ -94,3 +92,8 @@ permalink:
 [2]: http://instagram.com/developer/clients/manage/ "管理客户端页面"
 [1]: http://litten.github.io/2014/03/03/instagram-api-ex/ "instagram图片拉取小经验"
 [0]: /2015/12/27/Hexo-plug/#u540C_u6B65instagram_u56FE_u7247 "instagram: 教程总结"
+
+
+### 12-27 多说样式修改
+多说样式，被顶起的页面显示效果，还是不太好。
+具体样式请参照：[多说.css](https://github.com/luuman/Hexo/blob/master/themes/spfk/source/css/%E5%A4%9A%E8%AF%B4.css)
