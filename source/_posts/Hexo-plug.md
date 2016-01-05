@@ -945,3 +945,14 @@ D:\Hexo\Hexos\themes\spfk\layout\_partial\plugin.swig
     transition-delay: 0.15s
 ```
 
+## 自定义挂件
+
+除了默认已提供的挂件外，你还可以自定义自己的小挂件，在hexo\themes\modernist\layout\_widget\下，新建自己的ejs文件，如myWidget.ejs，然后在配置文件hexo\themes\modernist\_config.yml中配置。
+
+widgets:
+  - myWidget
+用上述方法可以添加新浪微博小挂件。
+
+生成自己的微博组件。
+添加hexo\themes\modernist\layout\_widget\weibo.ejs文件。
+配置hexo\themes\modernist\_config.yml。

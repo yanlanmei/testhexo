@@ -1,5 +1,5 @@
 title: Hexo bug
-date: 2015-12-28 18:29:00
+date: date
 description: 
 categories:
 - Hexo
@@ -14,14 +14,16 @@ permalink:
 　　** 自用笔记：**本文属于自用笔记，不做详解，仅供参考。在此记录自己已理解并开始遵循的前端代码规范。What How Why
 　　最近，使用Hexo遇到了很多问题，在设立进行整理。
 <!-- more -->
-
-
+[]()
+[首页文章摘要](https://github.com/MOxFIVE/hexo-theme-yelee/commit/2083b8a63e43c8d682e86ce788790ba93f96fc05)
+[]()
+[hexo生成JSON内容](https://github.com/alexbruno/hexo-generator-json-content)
+[hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)
 
 ### Wiki
 
 聚沙成塔，记录碎片化信息，构筑个人知识体系
 
-### 语法高亮样式修改
 
 ### 多说表情溢出
 移动端，多说表情溢出，将页面撑开。
@@ -32,7 +34,25 @@ permalink:
 ### Instagram图片显示
 移动端图片显示效果有待修改，应该不可以滑动，全屏填充。
 
+
+
+> - [[W]][10] 
+
+[12]: ht "hexo"
+
+
+
+
+
+
 ### 2016 年 01 月
+
+### 1-5 语法高亮样式修改
+> - [[W]][9] code highlight 代码高亮
+> - [[W]][10] Hexo\themes\landscape\source\css\_partial\highlight.styl
+
+[12]: ht "hexo"
+[12]: ht "hexo"
 
 ### 1-3 想办法添加作品介绍页面
 根据[Hexo][ ]官网的主题介绍，添加标签、名称、图片、介绍放置自己的作品。

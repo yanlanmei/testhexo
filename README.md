@@ -1,40 +1,77 @@
-# Hexo Website
+hexo-theme-spfk
+================
+          
+![luuman-ipad-iphone](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/luuman-ipad-iphone.jpg)
+![iPhone6](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/iPhone6-mockup.jpg)
+ 
 
-[![Build Status](https://travis-ci.org/hexojs/site.svg?branch=master)](https://travis-ci.org/hexojs/site)
 
-The website for Hexo. You can see the generated files at [hexojs/hexojs.github.io](https://github.com/hexojs/hexojs.github.io) repository.
+主题结构：
 
-## Getting started
+    .
+    ├── languages         #多语言
+    |   ├── default.yml  #默认语言
+    |   └── zh-CN.yml    #中文语言
+    ├── layout           #布局，根目录下的*.ejs文件是对主页，分页，存档等的控制
+    |   ├── _partial     #局部的布局，此目录下的*.ejs是对头尾等局部的控制
+    |   └── _widget      #小挂件的布局，页面下方小挂件的控制
+    ├── source           #源码
+    |   ├── css          #css源码 
+    |   |   ├── _base    #*.styl基础css
+    |   |   ├── _partial    #*.styl局部css
+    |   |   ├── fonts       #字体
+    |   |   ├── images      #图片
+    |   |   └── style.styl #*.styl引入需要的css源码
+    |   ├── fancybox      #fancybox效果源码
+    |   └── js            #javascript源代码
+    ├── _config.yml       #主题配置文件
+    └── README.md         #用GitHub的都知道
 
-Install dependencies:
+##一、关于主题：
+         
+
+##二、使用
+
+#### 安装
 
 ``` bash
-$ git clone https://github.com/hexojs/site.git
-$ cd site
-$ npm install
+$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 ```
 
-Generate:
+#### 配置
+
+修改hexo根目录下的 `_config.yml` ： `theme: yilia`
+
+#### 更新
 
 ``` bash
-$ hexo generate
+cd themes/yilia
+git pull
 ```
 
-Run server:
+##三、配置
 
-``` bash
-$ hexo server
+主题配置文件在主目录下的`_config.yml`：[_config.yml](http://luuman.github.io/2015/12/21/GitHub+Hexo/)   
+
 ```
+#### Header
+menu:
+  主页: /
+  所有文章: /archives
+  # 随笔: /tags/随笔
 
-## Contributors
+    #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key（http://duoshuo-key.duoshuo.com/）
+    #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
+    duoshuo: true
 
-- English - [tommy351]
-- 正體中文 - [tommy351]
-- 简体中文 - [pinggod]
+```
+#### 头像
+ 头像尺寸大概200*200px
 
-## License
 
-[CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+#### bug抓取：
 
-[tommy351]: https://github.com/tommy351
-[pinggod]: https://github.com/pinggod
+* 移动端友情链接靠的太近
+    * 修改他们之间的间距(mobile-slider.styl)
+* 侧边栏展示的内容有限
+    * 添加侧边栏滚动轴
