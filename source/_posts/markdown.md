@@ -356,3 +356,28 @@ Markdown语法：
 [温谦](http://www.ituring.com.cn/users/81963)：[怎样使用Markdown](http://www.ituring.com.cn/article/23)
 [Leo Chin ](http://home.cnblogs.com/u/hnrainll/)：[Markdown 11种基本语法](http://www.cnblogs.com/hnrainll/p/3514637.html)
 [Equation 85](http://equation85.github.io/)：[Markdown语法示例](http://equation85.github.io/blog/markdown-examples/)
+
+
+Markdown 免费编辑器
+Windows 平台
+[GitHub Atom](https://atom.io/)
+[MarkdownPad](http://markdownpad.com/)
+[MarkPad](http://code52.org/DownmarkerWPF/)
+
+Linux 平台
+[ReText](http://sourceforge.net/p/retext/home/ReText/)
+
+Mac 平台
+[Mou](http://mouapp.com/)
+
+在线编辑器
+[Markable.in](http://markable.in/)
+[Dillinger.io](http://dillinger.io/)
+
+浏览器插件
+[MaDe](https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog) (Chrome)
+
+高级应用(Sublime Text 2 + MarkdownEditing 教程)
+[Sublime Text 2](http://www.sublimetext.com/2)
+[MarkdownEditing](http://ttscoff.github.com/MarkdownEditing/)
+[教程](http://lucifr.com/2012/07/12/markdownediting-for-sublime-text-2/)

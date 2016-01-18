@@ -54,7 +54,7 @@ data-client-id：
     https://instagram.com/oauth/authorize/?client_id=a0d4bdab154b4c689aff70602cb34a2c&redirect_uri=http://luuman.github.io/&response_type=token
     花括号里面的值，对应上一步最终得到的client_id和自己设定的redirect_uri。
     请求到的是一个授权页面，授权完毕后，则重定向到你的redirect_uri。
-    注意看授权成功后的url，hash部分会附带给你的token。至此，token成功获取。
+    注意看授权成功后的url，hash部分会附带给你的token。至此，token成功获取，将至放在data-client-id。
 
 data-user-id：
 
@@ -92,7 +92,7 @@ vim themes/light/layout/_partial/article.ejs
     <a href="#" class="fx bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
     <a href="#" class="fx fa- bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
     <a href="#" class="fx fa- bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
-
+</div>
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 ```
 >修改样式
@@ -948,7 +948,7 @@ D:\Hexo\Hexos\themes\spfk\layout\_partial\plugin.swig
 ## 自定义挂件
 
 除了默认已提供的挂件外，你还可以自定义自己的小挂件，在hexo\themes\modernist\layout\_widget\下，新建自己的ejs文件，如myWidget.ejs，然后在配置文件hexo\themes\modernist\_config.yml中配置。
-
+```
 widgets:
   - myWidget
 用上述方法可以添加新浪微博小挂件。
@@ -956,3 +956,71 @@ widgets:
 生成自己的微博组件。
 添加hexo\themes\modernist\layout\_widget\weibo.ejs文件。
 配置hexo\themes\modernist\_config.yml。
+```
+
+
+## Hexo语法高亮
+
+查阅格式高亮代码，了解到本主题，通过特定的规律进行语法高亮！好像无法识别不同代码的语法高亮！
+
+测试：
+
+通过测试代码，查看后台代码逻辑，了解到可以识别Apache、C++、bash等，还有部分不可识别。那么这个主题用的是什么的语法高亮？
+
+
+代码code，table-gutter-pre是代码前面的序号。class="highlight apache"
+```
+J:\Hexo\Hexo\themes\spfk\source\css\_partial\highlight.styl
+
+// https://github.com/luuman/hexo-theme-spfk
+
+code-bgc = #002B36
+code-tag = #F92672
+code-attr = #A6E22E
+code-word = #FFFFFF
+code-value = #E6DB74
+code-number = #9E90FF
+code-keyword = #66D9EF
+code-comment = #75715E
+code-argument = #FD971F
+
+$code-block
+  background: code-bgc
+  margin: 10px 0
+  padding: 10px 10px
+  overflow: auto
+  color: #4C4C4C
+  line-height: font-size * line-height
+```
+参考：
+highlight.js：
+Demo https://highlightjs.org/static/demo/
+Solarized Dark
+Atelier Sulphurpool Dark
+文档：http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html
+下载：https://highlightjs.org/download/
+
+
+## 首页添加loading效果
+
+
+themes\spfk\layout\index.ejs
+
+
+```
+<link rel="stylesheet" href="css/loading-style.css">
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+
+<%- partial('_partial/archive', {pagination: 2, index: true}) %>
+<!-- loading -->
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script type="text/javascript">
+    $(window).load(function() {                              // makes sure the whole site is loaded
+        $('#loader').fadeOut();                              // will first fade out the loading animation
+            $('#loader-wrapper').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow-y':'visible'});
+    })
+</script>
+```

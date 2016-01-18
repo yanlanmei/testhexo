@@ -20,7 +20,6 @@ noDate: "true"
 		font-style: italic;
 	}
 	#ds-recent-visitors {
-		margin: 0;
 		padding: 0;
 	}
 	#ds-recent-visitors div img {
@@ -39,11 +38,18 @@ noDate: "true"
 	}
 </style>
 
----
+
 
 　　**2015年6月，毕业明确了自己真正所热衷的事，并找到了与之匹配的职业 <span>——</span> Web 前端工程师。为能如愿转职，开始利用业余时间，努力钻研，希望这一天尽早到来！**
 
 <p class="sign"><span>——</span>  2015年9月30日</p>
+
+
+<br>
+
+**白纸的地图:**
+
+如果把来找我咨询的人比喻成迷途的羔羊，通常他们手上都有地图，却没有去看，或是不知道自己目前的位置。你的地图是一张白纸，所以即使想决定目的地，也不知道路在哪里。可是换个角度看，正因为是一张白纸，才可以随心所欲地描绘地图，一切全在你自己。对你来说，一切都是自由地，在你面前是无限地可能。这可是很棒地事啊。
 
 **开博缘由:**
 > 在建立改造博客网站的过程中，学习和巩固前端基本知识；
@@ -69,4 +75,7 @@ noDate: "true"
 > 个人邮件及社交网站等信息见边栏底部；
 > 有什么留言或问题直接在文末留下评论即可。
 
-<ul class="ds-recent-visitors" data-num-items="30" data-avatar-size="56"></ul>
+<br>
+
+
+<ul class="ds-recent-visitors" data-num-items="39" data-avatar-size="56"></ul>

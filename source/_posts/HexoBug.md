@@ -1,5 +1,5 @@
 title: Hexo bug
-date: date
+date: 2015-11-27 18:29:00
 description: 
 categories:
 - Hexo
@@ -24,6 +24,9 @@ permalink:
 
 聚沙成塔，记录碎片化信息，构筑个人知识体系
 
+### 圆圈导航JS出现问题
+
+有时候不出现
 
 ### 多说表情溢出
 移动端，多说表情溢出，将页面撑开。
@@ -34,18 +37,40 @@ permalink:
 ### Instagram图片显示
 移动端图片显示效果有待修改，应该不可以滑动，全屏填充。
 
+### 1-3 想办法添加作品介绍页面
 
+界面不够完美，有待于修改！
 
 > - [[W]][10] 
 
 [12]: ht "hexo"
 
 
+### IE 低版本浏览器不支持
 
+    <!--[if lt IE 10]>
+    <script>window.location.href="http://luuman.github.io/Works/PC/IE/";</script>
+    <![endif]-->
 
-
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','js/eed8ec65a6dd9b05eed6d4a02e1439e4.js','ga');
+ 
+        ga('create', 'UA-65952334-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
 ### 2016 年 01 月
+
+### 1-7 首页添加loading效果
+> - [[W]][9] loading效果
+> - [[W]][10] Hexo\themes\landscape\source\css\_partial\highlight.styl
+
+[12]: ht "hexo"
+[12]: ht "hexo"
 
 ### 1-5 语法高亮样式修改
 > - [[W]][9] code highlight 代码高亮

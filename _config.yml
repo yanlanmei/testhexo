@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: luuman's Blog
-subtitle: 成为世界第一的大剑豪，让其名声响彻天堂！
-description: 世平阜康海贼王博客，闯前端，享阅读，乐运动，爱摄影。一个站在web前端设计之路的程序员个人网站，使用Hexo+GitHub进行建站。
+title: Luuman's Blog
+subtitle: 因为有了危机感，所以会义无反顾。
+description: luuman，90后，水瓶座普通男青年！爱折腾，爱运动，更爱游离于错综复杂的编码与逻辑中，无法自拔。相信编程是一门艺术，自诩为游弋在代码里的人生。
 author: 世平阜康
 language: zh-Hans
 timezone:
@@ -82,3 +82,10 @@ deploy:
   type: git
   repository: git@github.com:luuman/luuman.github.io.git
   branch: master
+
+# Deployment 站点部署到github要配置，上一节中已经讲过
+## Docs: http://zespia.tw/hexo/docs/deploy.html
+#deploy:
+#  type: git
+#  repository: git@github.com:luuman/Blog.git
+#  branch: gh-pages

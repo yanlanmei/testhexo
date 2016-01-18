@@ -1,21 +1,32 @@
 # Header
 menu:
-  闯前端: /works
-  享阅读: /
-  来切磋: /about
-  爱摄影: /instagram
+  博客首页: /Home
+  作品展示: /works
+  留言打卡: /about
+  前端导航: /FrontEndGuide
+#  静心阅读: /tags
+#  光影之路: /instagram
+
+
+#  Home: /Home
+#  Works: /works
+#  About: /about
+#  Guides: /FrontEndGuide
+#  Reader: /
+#  Photography: /instagram
+
   # 随笔: /tags/随笔
 
 # SubNav
 subnav:
-  weibo: "http://weibo.com/lishangmou"
+  mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E"
   github: "https://github.com/luuman"
   zhihu: "https://www.zhihu.com/people/luuman"
-  mail: "512769206@qq.com"
+  weibo: "http://weibo.com/lishangmou"
   google: "http://i.youku.com/shangmou"
-  rss: /atom.xml
   twitter: "http://twitter.com/luuman"
   facebook: "#"
+  rss: /atom.xml
   #linkedin: "https://www.linkedin.com/in/%E5%BF%A0%E6%88%90-%E6%9D%8E-a48562b1"
   #douban: "#"
   #google: "#"
@@ -83,13 +94,10 @@ tagcloud: true
 #开启——
 friends:
   MOxFIVE: http://MOxFIVE.github.io/
-  dengo: http://dengo.org/
-  Litten: http://litten.github.io/
   DoubleV: http://www.vsay.cn/
   兮兮: http://www.ccwebsite.com/
   翁天信: http://blog.dandyweng.com/
   潘利强: http://www.plqblog.com/views/index.php
-  PuYart: http://puyart.net/
 
 swift_search:
   enable: true
