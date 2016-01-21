@@ -25,12 +25,11 @@ description:
 >XHTML
 
 ```
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 ```
 
 >HTML 5
-
 
 ```
 <!-- HTML 5 -->
@@ -44,7 +43,10 @@ description:
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
 ```
 ### 语言
+
+```
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+```
 
 ## HTML
 
@@ -69,6 +71,8 @@ description:
 这其中包括 <a>、<img>、<link>、<form> 标签中的 URL。
 在 HTML 中，<base> 标签没有结束标签；在 XHTML 中，<base> 标签必须被正确地关闭。
 但是还是建议要闭合标签，这样不同浏览器兼容不容。
+
+```
 
 ```
 该标签将会控制所有链接，围棋添加默认的链接。
@@ -283,9 +287,53 @@ data-type="one">
 </body>
 </html>
 
-
+# CSS
 
 iframe无法全屏显示，html，设置高度100%。
 
 
 CSS a标签，移动端显示方框
+
+
+.f-img-light-wrap {
+	overflow: hidden;
+	position: relative
+}
+
+.f-img-light-wrap:after {
+	content: '';
+	height: 100%;
+	width: 100px;
+	transform: skewX(-25deg) translate3d(0,0,0);
+	background: -moz-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 50%,rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(50%,rgba(255,255,255,.3)),color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 50%,rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.3)50%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 50%,rgba(255,255,255,0) 100%);
+	position: absolute;
+	left: -160%;
+	top: 0;
+	z-index: 9
+}
+
+.f-img-light-wrap:hover:after {
+	transition: left 1s ease-in-out;
+	left: 160%
+}
+
+
+
+	/*首字母大写*/
+	text-transform:capitalize;
+
+
+
+
+
+
+
+
+
+
+
+<iframe src="http://sandbox.runjs.cn/show_square/587" allowtransparency="true" frameborder="0" scrolling="no" style=""></iframe>

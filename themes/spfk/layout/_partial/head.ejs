@@ -2,12 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!--[if lt IE 10]>
+  <script>window.location.href="http://luuman.github.io/Works/PC/IE/";</script>
+  <![endif]-->
   <%
   var title = page.title;
-
   if (is_archive()){
     title = 'Archives';
-
     if (is_month()){
       title += ': ' + page.year + '/' + page.month;
     } else if (is_year()){
@@ -40,7 +41,9 @@
     <% } %>
   <% } %>
   <%- partial('post/baidu_analytics') %>
-<!--[if lt IE 10]>
-<script>window.location.href="http://luuman.github.io/Works/PC/IE/";</script>
-<![endif]-->
+  <!-- 加载特效 -->
+  <% if(theme.animate) { %>
+   <script src="/js/pace.js"></script>
+  <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <% } %>
 </head>

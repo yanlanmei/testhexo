@@ -330,8 +330,15 @@ themes/你的主题/layout/_partial/footer.ejs
 
 >修改样式
 
+## 站内搜索框
 
-## 站点搜索框
+>添加代码
+用ajax+json搜索
+
+
+[完美解决Hexo静态博客搜索问题](http://www.netcan666.com/2015/11/20/%E5%AE%8C%E7%BE%8E%E8%A7%A3%E5%86%B3Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%9C%E7%B4%A2%E9%97%AE%E9%A2%98/)
+
+## 站点Swiftype搜索框
 
 >添加代码
 
@@ -1023,4 +1030,40 @@ themes\spfk\layout\index.ejs
         $('body').delay(350).css({'overflow-y':'visible'});
     })
 </script>
+```
+
+
+## LoadingBar页面顶部加载进度条
+
+J:\Hexo\Hexo\themes\spfk\layout\_partial\head.ejs
+
+```
+<!-- 加载特效 -->
+<% if(theme.animate) { %>
+ <script src="/js/pace.js"></script>
+<link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+<% } %>
+```
+
+
+## highlight.js
+
+```
+J:\Hexo\Hexo\node_modules\hexo-renderer-marked\node_modules\hexo-util\lib\highlight.js:
+   37    }
+   38  
+   39:   result += '<figure class="highlight' + (data.language ? ' ' + data.language : '') + '"' + 'data-lang="' + (data.language ? ' ' + data.language : '') + '">';
+   40  
+   41    if (caption) {
+
+J:\Hexo\Hexo\node_modules\hexo-util\lib\highlight.js:
+   33    }
+   34  
+   35:   result += '<figure class="highlight' + (data.language ? ' ' + data.language : '') + '">';
+   36  
+   37    if (caption){
+
+6 matches across 2 files
+
+  result += '<figure class="highlight' + (data.language ? ' ' + data.language : '') + '"' + 'data-lang="' + (data.language ? ' ' + data.language : '') + '">';
 ```
