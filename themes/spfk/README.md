@@ -1,139 +1,183 @@
-hexo-theme-yilia
-================
+![Yelee](
+http://i13.tietuku.com/404b8c63eb155793.jpg)
 
-Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
-崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](http://litten.github.io/) 查看效果。           
- 
-如遇到问题或有需求，可以：
-* 提issue给我
-* 在这篇文章下留言[Hexo主题Yilia](http://litten.github.io/2014/08/31/hexo-theme-yilia/)
-* 移动端问题留言[Yilia在移动端适配的一些事](http://litten.github.io/2015/02/23/yilia-on-mobile/)
+### Introduction 前言
 
-我都会看到并处理。
+Theme **Yelee** relies on [Hexo-Theme-Yilia][1], thanks for the author [Litten][2]. Fix some bugs, change lots of styles, add several features. And then I made the theme. Yelee is mainly designed for fluent text reading. I change styles and add functions, meanwhile, try hard to keep this theme simple, stupid and clear. Theme DEMO: [MOxFIVE's Blog][6]
 
-如果你想体验手机浏览效果，可以扫一下二维码：
+> M-Hexo-Blog [Commits][3]; hexo-theme-yelee [Commits][4]; [建站日志][5]
 
-![litten-qrcode](https://cloud.githubusercontent.com/assets/2024949/6349328/51a067fe-bc64-11e4-881c-f68050c50c28.png)
+本主题 **Yelee** 基于主题 [Hexo-Theme-Yilia][1] 修改而来，在此感谢原作者 [Litten][2]。修复了一些 bugs，改变了大量的样式，添加了不少特性。对原主题百般折腾后，发觉变动越来越大，索性就发布个新主题了，主题随我微博名叫 "Yelee" 。个人喜欢简洁的样式，重视内容的浏览，同时希望博客作为个人网站，能稍微凸显出博主个性。各种修改折腾大抵基于以上考虑。主题实际效果，请访问本人博客查看：[MOxFIVE's Blog][6]
 
-—————————————————————
+[1]: https://github.com/litten/hexo-theme-yilia
+[2]: http://litten.github.io/ "Litten的博客"
+[3]: https://github.com/MOxFIVE/M-Hexo-Blog/commits/master
+[4]: https://github.com/MOxFIVE/hexo-theme-yelee/commits/master
+[5]: http://moxfive.xyz/2015/08/20/blog-building/ "个人博客站点建设历程"
+[6]: http://moxfive.xyz
 
-关于主题：
+![QR](http://i11.tietuku.com/f9ce6d6bb62921d4.png)
 
-1. 我喜欢简约。所以近期文章，搜索框都拿掉了    
-2. 接地气一点。所以用上了jiathis分享，友言评论，以及baidu的cdn       
-3. 追求移动端的体验
-3. 让大家把注意力放到内容上。这是本主题设计初衷      
-4. 主题不支持IE6，7，8。以后也不会        
+### Installation 安装主题
 
-##一、近期更新
-
-2015.6.14 - 模块化加载
-2015.2.21 - 移动侧重构&布局bug修改
-2014.11.7 - 增加“友情链接”“关于我”               
-2014.10.22 - 优化fancybox展示               
-2014.10.16 - 增加表格样式                 
-2014.9.19 - 云标签挂件                 
-
-##二、使用
-
-#### 安装
-
-``` bash
-$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+```
+git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee
 ```
 
-#### 配置
+Change theme field in Hexo root's _config.yml file. 修改 Hexo 根目录对应配置文件。
 
-修改hexo根目录下的 `_config.yml` ： `theme: yilia`
+```
+theme: yelee
+```
 
-#### 更新
+### Update 更新
 
-``` bash
-cd themes/yilia
+```
+cd themes/yelee
 git pull
 ```
 
-##三、外观
+### New Features 新特性
+| - |            Chs           |                En               |
+|:-:|:------------------------:|:-------------------------------:|
+| 1 | 嵌入边栏的文章目录       | Flexible table of contents      |
+| 2 | 透明化背景，随机背景大图 | Transparent & Random background |
+| 3 | 页内跳转按钮             | Scrolling button                |
+| 4 | 文章版权等信息显示       | Copyright info.                 |
+| 5 | 文章导航切换按钮         | Post navigation button          |
+| 6 | 网站计数                 | Site counter                    |
 
-####**宽屏**
-![宽屏](http://littendomo.sinaapp.com/yilia/yilia-pc1.png)        
+![feature](http://i13.tietuku.com/2bfd34c63f627bae.jpg)
 
-####**宽屏文字**
-![宽屏文字](http://littendomo.sinaapp.com/yilia/yilia-pc2.png)   
 
-####**窄屏**
-![窄屏](http://littendomo.sinaapp.com/yilia/yilia-pc3.png)     
+### Configuration 配置
 
-####**同步instagram**
-![同步instagram](http://littendomo.sinaapp.com/yilia/yilia-pc4.png)
+#### 0. Post Excerpt 文章摘要
+There are two ways to show excerpt in homepage. 
 
-####**移动端**
-![移动端](http://littendomo.sinaapp.com/yilia/yilia-mobile.png)
-![移动端](http://littendomo.sinaapp.com/yilia/yilia-mobile2.png)   
+目前主题可使用两种方式在首页显示文章摘要而不是全文。
 
-##四、配置
+- a: <!-- more -->
 
-主题配置文件在主目录下的`_config.yml`：
+``` diff
+title: Hello World
+date: 2015-12-03 00:00:00
+---
+<Excerpt in index | 首页摘要> 
++ <!-- more -->
+<The rest of contents | 余下全文>
+```
+- b: description in Front-matter
+
+``` diff
+title: Hello World
+date: 2015-12-03 00:00:00
++ description: "Welcome to Hexo! This is your very first post."
+---
+<Contents>
+```
+
+> Description only support plain text. | 通过 description 添加的摘要只能为纯文本。
+
+> Set the value of description with quotes to avoid unexpected error `:`. | description 的内容加双引号，可以避免一些程序错误，例如内容里包含英文冒号时。
+
+
+
+#### 1. About Page 关于我页面: 
+cd to your hexo folder and run this code:
+
+使用以下代码添加一个新页面：
 
 ```
-# Header
-menu:
-  主页: /
-  所有文章: /archives
-  # 随笔: /tags/随笔
-
-# SubNav
-subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
-  #douban: "#"
-  #mail: "#"
-  #facebook: "#"
-  #google: "#"
-  #twitter: "#"
-  #linkedin: "#"
-
-rss: /atom.xml
-
-# Content
-excerpt_link: more
-fancybox: true
-mathjax: true
-
-# Miscellaneous
-google_analytics: ''
-favicon: /favicon.png
-
-#你的头像url
-avatar: ""
-#是否开启分享
-share: true
-#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
-#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: true
-#是否开启云标签
-tagcloud: true
-
-#是否开启友情链接
-#不开启——
-#friends: false
-#开启——
-friends:
-  奥巴马的博客: http://localhost:4000/
-  卡卡的美丽传说: http://localhost:4000/
-  本泽马的博客: http://localhost:4000/
-  吉格斯的博客: http://localhost:4000/
-  习大大大不同: http://localhost:4000/
-  托蒂的博客: http://localhost:4000/
-
-#是否开启“关于我”。
-#不开启——
-#aboutme: false
-#开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+hexo new page about
 ```
-##五、其他
 
-[同步你的instagram图片](https://github.com/litten/hexo-theme-yilia/wiki/%E5%90%8C%E6%AD%A5%E4%BD%A0%E7%9A%84instagram%E5%9B%BE%E7%89%87)
+#### 2. Tags Cloud Page 标签云页面:
+
+```
+hexo new page tags
+```
+
+> Post with several categories 文章设置多个分类后的问题 [issue#4](https://github.com/MOxFIVE/hexo-theme-yelee/issues/4) 
+
+> - [让 Hexo 自动生成 Tag Cloud 标签云页面](http://moxfive.xyz/2015/10/25/hexo-tag-cloud/)
+
+#### 3. Background image 网页背景:
+
+Find or change background images in folder | 修改背景图地址: 
+
+> `/yelee/source/background/`
+
+Setting in `themes/yelee/_config.yml` 背景参数:
+
+`
+background_image: 5
+`
+
+- Default value is 5, free to modify the number | 默认值为5，可按需修改
+
+- "5": show 5 images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
+
+- "5": 设置`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片为背景
+
+- "0": remove background image and use white-gray theme | 取消网页背景图，使用淳朴的灰白主题 
+
+#### 4. Style image 自定义图片样式:
+In order to style posts/pages' image with HTML/CSS within `.md` files, you should disable fancybox function firstly. 
+
+如果要使用 HTML/CSS 自定义文章图片样式，需要先关闭 fancybox 功能。
+
+Disable fancybox in full site | 在全站关闭 fancybox:
+
+> Set `fancybox: false` in `yelee/_config.yml`
+
+Disable fancybox in certain post/page | 在某篇文章中关闭 fancybox:
+
+> Add `fancybox: false` in [front-matter](https://hexo.io/docs/front-matter.html)
+
+#### 5. Comment 评论:
+Disqus, duoshuo and youyan is supported, enable them in theme's "_config.yml".
+主题目测支持 Disqus，多说 和友言评论，自行在主题配置中开启。
+
+多说: http://duoshuo.com/create-site/ 登陆你的多说并创建站点，在 "domain" 中填入你设定的域名。请设置好自己专属的多说，不要再群聊了。
+
+> - [保留使用 Yilia 主题时的多说用户评论](https://github.com/MOxFIVE/hexo-theme-yelee/issues/1)
+
+> - [多说样式折腾记录 — 添加 UA 浏览器标识、旋转头像等](http://moxfive.xyz/2015/09/29/duoshuo-style/)
+
+#### 6. Table of Contents 文章目录:
+
+Remove toc and the button via putting `toc: false` before "---" at [post].md.
+
+文章中默认显示目录和对应切换按钮，在文章 “---” 前输入 `toc: false` 关闭目录。
+
+#### 7. Copyright info. 文章版权信息:
+
+Hide this  via putting `original: false` to post's front-matter.
+
+在文章顶部插入行 `original: false` 关闭文章版权声明框
+
+#### 8. 404 Page:
+
+```
+hexo new page 404
+```
+And then set `permalink: /404` in `/source/404/index.md` front matter.
+
+> - [在 Hexo 中创建匹配主题的404页面](http://moxfive.xyz/2015/10/16/hexo-404-page/)
+
+#### 9. RSS Feed 文章订阅:
+
+Install plugin: [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+
+#### 10. Sitemap for SEO 站点地图:
+
+Install plugin: [hexo-generator-seo-friendly-sitemap](https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap)
+
+百度专用: [hexo-generator-baidu-sitemap](https://github.com/coneycode/hexo-generator-baidu-sitemap)
+
+#### 11. Apple Touch icon 苹果图标:
+
+替换路径: `/yelee/source/apple-touch-icon.png`
+
+[Recommended size: 180*180](https://realfavicongenerator.net/blog/apple-touch-icon-the-good-the-bad-the-ugly/)
