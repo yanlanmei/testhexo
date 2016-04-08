@@ -13,6 +13,9 @@ permalink:
 ---
 　　** 自用笔记：**本文属于自用笔记，不做详解，仅供参考。在此记录自己已理解并开始遵循的前端代码规范。What How Why
 <!-- more -->
+
+<iframe width="100%" height="100%" src="http://luuman.github.io/Native-JS/"></iframe>
+
 ## Title炫舞
 
 为了实现Title的动态变化，使用document.title修改Title的内容。

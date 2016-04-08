@@ -18,7 +18,7 @@
         <%}%>
         <% if (theme.search_box){ %>
             <form>
-                <input type="text" class="search" placeholder=" Search...">
+                <input type="text" class="st-default-search-input search" id="search" placeholder=" Search...">
             </form>
         <%}%>
         <%if(theme.tagcloud){%>
@@ -76,7 +76,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             <% for (var i in theme.subnav){ %>
-                                <li id="<%= i %>"><a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"></a></li>
+                                <a class="fl <%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><%= i %></a>
                             <%}%>
                         </ul>
                     </nav>

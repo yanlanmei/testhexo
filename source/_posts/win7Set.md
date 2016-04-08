@@ -36,6 +36,7 @@ permalink:
 	firefox+firebug 浏览器
 	chrome + Proxy SwitchySharp 浏览器
 	sublime text（代码编辑器）
+	Fiddler2 
 
 ### 驱动
 	LenovoDM（联想驱动）
@@ -76,9 +77,9 @@ permalink:
 #### 如何设置 Windows 7 的休息提醒？
 	直接使用cmd命令shutdown -s -t 7200，两个小时候右下方会提示将要关机，如果你还想继续玩，可以取消！
 
-#USB ICON
+## USB ICON
 
-###一、安装前准备
+### 一、安装前准备
 >U盘、电脑、ICON.ico（U盘图标）、autorun.inf（ICON）、desktop.inf（Bg）、background.jpg（背景图片）、1.bat（显示文件）、2.bat（隐藏文件）
 
 >将文件存放在，U盘的根目录下即可，双击“2.bat”隐藏文件。
@@ -117,7 +118,7 @@ permalink:
 
  
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-b0b6adb60e10a154.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=2)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-b0b6adb60e10a154.jpg)
 
  
 
@@ -127,11 +128,11 @@ permalink:
 
  
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-904770c5382c1605.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=2)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-904770c5382c1605.jpg)
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-a6ffefaa9a05e8e4.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=3)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-a6ffefaa9a05e8e4.jpg)
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-fb3eab668452d471.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=4)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-fb3eab668452d471.jpg)
 
  
 
@@ -141,11 +142,11 @@ permalink:
 
  
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-24ccd860a112681d.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=5)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-24ccd860a112681d.jpg)
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-e747f9adc02c4cba.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=6)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-e747f9adc02c4cba.jpg)
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-0fbcf67c6e325caf.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=7)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-0fbcf67c6e325caf.jpg)
 
  
 
@@ -155,9 +156,9 @@ permalink:
 
  
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-b3dd9d8fe7cf5c75.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=8)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-b3dd9d8fe7cf5c75.jpg)
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-6c009865418c1a14.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=9)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-6c009865418c1a14.jpg)
 
  
 
@@ -165,7 +166,7 @@ permalink:
 
  
 
-[![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-89cc7e1b14395e7b.jpg](http://jingyan.baidu.com/album/f3e34a12afcccdf5eb6535df.html?picindex=10)
+![win7开机动画制作](http://upload-images.jianshu.io/upload_images/1064727-89cc7e1b14395e7b.jpg)
 
  
 

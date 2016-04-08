@@ -1,3 +1,30 @@
+- name: CSS3动画探秘
+  description: Canvas 实现也是可以的，这里不做介绍，本次主题是 css3 动画
+  link: https://github.com/luuman/CSS3/Animation/Gifs/
+  preview: http://luuman.github.io/CSS3/Animation/Gifs/
+  imgs: Gifs
+  tags:
+    - CSS3
+    - Animation
+    - Gif
+- name: 动态百度分享接口
+  description: 分享借口，百度由于样式丑陋哎！
+  link: https://github.com/luuman/Share
+  preview: http://luuman.github.io/Share/Droplet-Viscosity-Sharing/index.html
+  imgs: Share
+  tags:
+    - 动态
+    - 百度分享
+    - 水滴
+- name: 原生JS实例
+  description: 多抑或少，记录前方的足迹！
+  link: https://github.com/luuman/Native-JS
+  preview: http://luuman.github.io/Native-JS/
+  imgs: Native-JS
+  tags:
+    - 兴趣
+    - 新怡
+    - 原生
 - name: 前端导航
   description: 让更多的人了解前端、让更多的人熟悉前端、让更多的人痴迷前端，让我们奉献于前端..
   link: https://github.com/luuman/FrontEndGuide

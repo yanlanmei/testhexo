@@ -119,14 +119,14 @@ Markdown语法：
 ```
 Markdown语法：
 
-[简书](链接地址)
-![简书slogan](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/luuman-ipad-iphone.jpg)
+[简书](链接地址 "描述")
+![简书slogan](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/luuman-ipad-iphone.jpg "描述")
 
 [简书][1]
 ![简书slogan][2]
 
-[1]:链接地址
-[2]:链接地址
+[1]:链接地址 "描述"
+[2]:链接地址 "描述"
 
 [无链接的链接][null-link]
 [null-link]: chrome://not-a-link
@@ -134,16 +134,16 @@ Markdown语法：
 ```
 效果预览：
 
-[简书](链接地址)
+[简书](链接地址 "描述")
 
-![简书slogan](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/luuman-ipad-iphone.jpg)
+![简书slogan](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/luuman-ipad-iphone.jpg "描述")
 
 [简书][1]
 
 ![简书slogan][2]
 
-[1]:链接地址
-[2]:https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/luuman-ipad-iphone.jpg
+[1]:链接地址 "描述"
+[2]:https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/luuman-ipad-iphone.jpg "描述"
 [无链接的链接][null-link]
 [null-link]: chrome://not-a-link
 
@@ -273,7 +273,7 @@ Markdown语法：
 ```
 预览效果：
 
-A [[1]](http://www.jianshu.com/p/21d355525bdf#fn_lemma_a)
+A [[1]](http://www.jianshu.com/p/21d355525bdf#fn_lemma_a "描述")
 
 ### 创建链接
 ```
@@ -360,6 +360,16 @@ Markdown语法：
 
 
 Markdown 免费编辑器
+
+在线编辑器
+[MaHua](http://mahua.jser.me/ "小众软件推荐，界面有些简陋")
+[Dillinger.io](http://dillinger.io/ "漂亮强大，支持md, html, pdf 文件导出。支持dropbox, onedrive，google drive, github. 来自国外，可能不够稳定。")
+[Markable.in](http://markable.in/ "一个显著的markdown编辑器")
+[marxi](http://marxi.co/ "马克飞象")
+
+浏览器插件
+[MaDe](https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog "Chrome")
+
 Windows 平台
 [GitHub Atom](https://atom.io/)
 [MarkdownPad](http://markdownpad.com/)
@@ -370,13 +380,6 @@ Linux 平台
 
 Mac 平台
 [Mou](http://mouapp.com/)
-
-在线编辑器
-[Markable.in](http://markable.in/)
-[Dillinger.io](http://dillinger.io/)
-
-浏览器插件
-[MaDe](https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog) (Chrome)
 
 高级应用(Sublime Text 2 + MarkdownEditing 教程)
 [Sublime Text 2](http://www.sublimetext.com/2)

@@ -109,7 +109,28 @@ addthis
 http://www.addthis.com/
 
 
+新版群规：http://t.cn/RUdaGHn
+github组织：https://github.com/jsfront
+想进高级看：
+http://www.cnblogs.com/jikey/p/4426105.html 
 
+
+入门三板斧：
+http://www.cnblogs.com/jikey/p/3613082.html 
+
+
+入门看这个。
+http://pan.baidu.com/s/1pJqJvAV
+入门JS视频。
+http://pan.baidu.com/s/1o6DTGro
+http://pan.baidu.com/s/1bnlHT3x
+前端开发 资料都在这里边。
+http://t.cn/Rv38Wg7
+API参考手册大全
+http://www.cnblogs.com/sb19871023/p/3894452.html 
+
+
+前端知识结构
 
 
 

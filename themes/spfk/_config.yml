@@ -29,7 +29,7 @@ subnav:
   zhihu: "https://www.zhihu.com/people/luuman"
   weibo: "http://weibo.com/lishangmou"
   google: "http://i.youku.com/shangmou"
-  twitter: "http://twitter.com/luuman"
+  twitter: "http: //twitter.com/luuman"
   facebook: "#"
   rss: /atom.xml
   # linkedin: "https://www.linkedin.com/in/%E5%BF%A0%E6%88%90-%E6%9D%8E-a48562b1"
@@ -55,7 +55,7 @@ subnav:
 
 disqus: 
   #on: true
-  shortname: 
+  shortname: luumans
   # https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
   # It is unnecessary to enable disqus here if 
   # you have set "disqus_shortname" in your site's "_config.yml" 
@@ -78,10 +78,14 @@ youyan:
 # >>> Style Customisation 样式自定义 <<<
 
 # Background | 背景
-## "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
-## "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
-## "0": white-gray background | 淳朴灰白背景
-background_image: 5
+## "background_sum": show images form /source/background/的图片数目
+## "on: true": 自动随机显示这5张图片
+## "on: false": 自定义显示图片设置background_image: 5
+background:
+  on: true
+  #on: false
+  background_sum: 24
+  background_image: 109
 
 highlight_style:
   #on: true
@@ -110,7 +114,7 @@ excerpt_link: 大航海 #修改more>>的文字
 
 # 是否显示边栏中的搜索框（仅样式，未添加搜索功能）
 # Search Box in left column
-# search_box: true
+search_box: true
 
 # 是否开启主页及加载头像时的动画效果
 # Animation in Homepage and Loading avatar
@@ -131,9 +135,11 @@ friends:
   兮兮: http://www.ccwebsite.com/
   翁天信: http://blog.dandyweng.com/
   潘利强: http://www.plqblog.com/views/index.php
+  hankin: http://www.hankin.cn/
+  waydrow: http://blog.waydrow.com/
 
 #是否开启“关于我”。
-aboutme: 专注于前端
+aboutme: 纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中
 #aboutme: false
 
 # 是否在新窗口打开链接
@@ -157,14 +163,16 @@ mathjax: false
 # Socail Share | 是否开启分享
 # share: true
 baidushare: true
+#showshare: true
 
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
-baidu_site: 
-google_site: 
+google_site: # pFW527fHrjfI0si2w4NQ0w3cTw12AvvuohAu1PUfqKA
+baidu_site: #c167b9feb4f0b208b712c79629c188e4
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X
-google_analytics: 
+google_analytics:  # UA-75679138-1
+baidu_analytics: 819b1c6493df653afb8c7846bc4b8db6 # enter Baidu Analytics hash key
 
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/

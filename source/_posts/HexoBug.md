@@ -65,6 +65,13 @@ permalink:
 
 ### 2016 年 01 月
 
+### 1-28 TitleTip描述信息显示
+> - [[W]][9] 对A标签的title属性进行设置，将文本内容去除，使用div进行集中显示。
+> - [[W]][10] J:\Hexo\Hexo\themes\spfk\source\css\_partial\tagcloud.styl
+
+[12]: https://github.com/luuman/Hexo/blob/master/themes/spfk/source/css/_partial/tagcloud.styl#L365 "tagcloud.styl"
+[13]: http://luuman.github.io/Native-JS/TitleTip/ "TitleTip原生JS Demo"
+
 ### 1-7 首页添加loading效果
 > - [[W]][9] loading效果
 > - [[W]][10] Hexo\themes\landscape\source\css\_partial\highlight.styl

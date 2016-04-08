@@ -345,15 +345,28 @@ themes/你的主题/layout/_partial/footer.ejs
 ```
 \themes\spfk\layout\_partial\left-col.ejs
 
+<form>                
+    <input type="text" class="st-default-search-input search" id="search" placeholder=" Search..." autocomplete="off" autocorrect="off" autocapitalize="off">
+</form>
+
+
 D:\Hexo\Hexo\themes\spfk\layout\_partial\after-footer.ejs
 
 <script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  window.onload = function(){
+    document.getElementById("search").onclick = function(){
+        console.log("search")
+        search();
+    }
+  }
+  function search(){
+    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+    })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-  _st('install','A1Pz-LKMXbrzcFg2FWi6','2.0.0');
+    _st('install','A1Pz-LKMXbrzcFg2FWi6','2.0.0');
+  }
 </script>
 ```
 
@@ -1067,3 +1080,52 @@ J:\Hexo\Hexo\node_modules\hexo-util\lib\highlight.js:
 
   result += '<figure class="highlight' + (data.language ? ' ' + data.language : '') + '"' + 'data-lang="' + (data.language ? ' ' + data.language : '') + '">';
 ```
+
+
+## Hexo插件
+
+[Swiftype]("https://swiftype.com/")
+
+[微搜索]("https://dashboard.tinysou.com/")
+
+[不蒜子]("http://busuanzi.ibruce.info/")
+
+[百度统计]("http://sitecenter.baidu.com/sc-web/")
+
+[CNZZ数据]("http://www.cnzz.com/")
+
+[Font Awesome]("http://fontawesome.io/")
+
+[百度脑图]("http://naotu.baidu.com/edit.html")
+
+[ICON图标]("http://www.easyicon.net/")
+
+[Font Awesome]("http://fontawesome.dashgame.com/")
+
+[FREE Icon Maker]("https://freeiconmaker.com/")
+
+[Icon Font]("https://icomoon.io/")
+
+[在线ico]("http://www.ico.la/")
+
+[IcoMoon]("https://icomoon.io/")
+
+[Disqus]("https://disqus.com/")
+
+[多说评论]("http://luuman.duoshuo.com/admin/")
+
+[QQ邮箱开放平台]("http://open.mail.qq.com/cgi-bin/dy_template?sid=8EZP69fLJrYnKjRi&t=index&sub=0&r=2a79875e99ef37e39c7438e990f66d32")
+
+[七牛云存储]("https://portal.qiniu.com/")
+
+[百度分享]("http://share.baidu.com/")
+
+[AddThis]("http://www.addthis.com/")
+
+[分享一个方法解决Facebook,Linkedin,Twitter,Google+等SNS平台太多更新不过来的问题。 - 米课问答]("http://ask.imiker.com/question/6970")
+
+[GitCafe]("https://gitcafe.com/")
+
+[Coding.Net]("https://coding.net/user")
+
+[GitHub]("https://github.com/")
