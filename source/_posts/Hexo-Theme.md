@@ -36,6 +36,8 @@ git pull
 
 ## 配置
 
+关于配置文件，
+
 主题配置文件在主目录下的`_config.yml`：[_config.yml](http://luuman.github.io/2015/12/21/GitHub+Hexo/ "主题配置文件")
 
 相关插件的安装：请参照[Hexo插件安装](http://localhost:4000/2015/12/27/Hexo-plug/ "请参照安装")
@@ -63,7 +65,7 @@ background:
   background_sum: 24
   background_image: 109
 
-J:\Hexo\Hexo\themes\spfk\source\css\多说.css
+
 
 ```
 
@@ -77,6 +79,7 @@ duoshuo:
   # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
 
+J:\Hexo\Hexo\themes\spfk\source\css\多说.css
 
 添加方法：
 添加方法：打开「后台」 > 「多说评论」 > 「设置」 > 「基本设置」 > 然后把样式粘贴到「自定义CSS」文本框 > 「保存」
@@ -119,7 +122,9 @@ date: 2016-01-16 13:58:41
 description: 
 categories:
 - HTML 书籍
+- HTML 书籍
 tags:
+- HTML 标签 
 - HTML 标签
 toc: true 文章目录
 author:
@@ -166,3 +171,29 @@ And then set permalink: /404 in /source/404/index.md front matter.
 ```
 
 ![iPhone6](https://raw.githubusercontent.com/luuman/luuman.github.io/master/resoures/iPhone6-mockup.jpg)
+
+
+## 关于Hexo迁移
+
+最近，Waterstrong提交了一版，这版本可以将hexo布置在GitHub其下的其他项目，比如Blog等。但是还是有些东西需要修改。
+
+```
+# URL #这项暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://luuman.github.io/Blog/
+root: /Blog/
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+上传是需要出入密码
+
+# Deployment 站点部署到github要配置，上一节中已经讲过
+## Docs: http://zespia.tw/hexo/docs/deploy.html
+deploy:
+  type: git
+  #repository: git@github.com:luuman/Blog.git
+  repository: https://github.com/luuman/Blog.git
+  branch: gh-pages
+```
+
+非常感谢Waterstrong

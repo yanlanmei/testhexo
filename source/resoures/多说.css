@@ -502,7 +502,7 @@ span.ua {
     color: #FFF;
 }
 #ds-reset .ds-gradient-bg {
-    background-color: rgb(65, 65, 65);
+    background-color: rgba(63, 63, 63, 0);
     background-image: none;
 }
 

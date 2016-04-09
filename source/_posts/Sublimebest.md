@@ -323,7 +323,7 @@ E1D0AE85 A0BBD039 0E9C8D55 E1B89D5D
 5CDB7036 E56DE1C0 EFCC0840 650CD3A6
 B98FC99C 8FAC73EE D2B95564 DF450523
 ------ END LICENSE ------
- ```
+```
 
 ## 汉化：
 可以网上找些中文包放进去就行了。
@@ -346,7 +346,7 @@ GBK Encoding Support（GBK中文编码）
 SublimeLinter（代码错误提示） 总体架构
 snippets（自定制代码补齐机制）
 
-## [快捷代码：]()
+## 快捷代码：
 1. 跳到行首行尾的快捷键
 ```
     [
@@ -357,7 +357,12 @@ snippets（自定制代码补齐机制）
 ```
 先按ctrl+k，然后按ctrl+h（home首字母）光标移动到行首；先按ctrl+k，然后按ctrl+e（end首字母）光标移动到行尾。
 
+## 设置Setting
 
+```
+//Set Update false
+"update_check": false,
+```
 
 ## 延伸阅读（Further Reading）：
 1、书籍（Books）
