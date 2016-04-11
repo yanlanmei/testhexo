@@ -1,5 +1,5 @@
 title: Hexo bug
-date: 2015-11-27 18:29:00
+date: 2015-12-27 18:29:00
 description: 
 categories:
 - Hexo

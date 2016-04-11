@@ -1,5 +1,5 @@
 title: 使用GitHub搭建Hexo博客
-date: 2015-12-21 18:29:00
+date: 2015-12-27 18:29:00
 description: 来到GitHub这么长时间，才开始真真的了解GitHub，这个国外的代码托管平台，充满着大牛的身影。
 categories:
 - Hexo
