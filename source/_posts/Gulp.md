@@ -34,7 +34,7 @@ permalink:
 
 ### 目前最知名的构建工具： Gulp、Grunt、NPM + Webpack；
 
-```
+```Text
 grunt是前端工程化的先驱
 
 gulp更自然基于流的方式连接任务
@@ -48,30 +48,33 @@ Webpack最年轻，擅长用于依赖管理，配置稍较复杂
 
 Gulp是基于 Node.js的，需要要安装 Node.js
 
-1、为了确保依赖环境正确，我们先执行几个简单的命令检查。
+### 为了确保依赖环境正确，我们先执行几个简单的命令检查。
 
 ```
 luuman@luuman-PC MINGW64 ~
 $ node -v
+
 v5.3.0
 
 Node是一个基于Chrome JavaScript V8引擎建立的一个解释器
 检测Node是否已经安装，如果正确安装的话你会看到所安装的Node的版本号
 ```
-2、接下来看看npm，它是 node 的包管理工具，可以利用它安装 gulp 所需的包
+### 接下来看看npm，它是 node 的包管理工具，可以利用它安装 gulp 所需的包
 
 ```
 luuman@luuman-PC MINGW64 ~
 $ npm -v
+
 3.3.12
 
 这同样能得到npm的版本号，装 Node 时已经自动安装了npm
 ```
-3、开始全局安装Gulp
+### 开始全局安装Gulp
 
 ```
 luuman@luuman-PC MINGW64 ~
 $ npm install -g gulp
+
 npm WARN deprecated graceful-fs@3.0.8: graceful-fs version 3 and before will fail on newer node releases. Please update to graceful-fs@^4.0.0 as soon as possible.
 npm WARN deprecated lodash@1.0.2: lodash@<3.0.0 is no longer maintained. Upgrade to lodash@^4.0.0.
 npm WARN deprecated graceful-fs@1.2.3: graceful-fs version 3 and before will fail on newer node releases. Please update to graceful-fs@^4.0.0 as soon as possible.
@@ -92,191 +95,106 @@ C:\Users\luuman\AppData\Roaming\npm
 ```
 luuman@luuman-PC MINGW64 /l/Github
 $ gulp -v
+
 [18:39:18] CLI version 3.9.1
 
 得到gulp的版本号，确认安装成功
 ```
 
-## 工程创建
+## 创建工程
 
-### 创建
-
-创建一个文件目录，然后建立对应的文件夹
+### 演示项目目录结构
 
 ```
-src — 源文件:
-	images
-	scripts
-	styles
-build — 编译后文件输出到的生产文件夹:
-images
-scripts
-styles
+└─┬ src — 源文件:
+	├──images
+	├──scripts
+	├──styles
+├──build — 编译后文件输出到的生产文件夹:
+├──images
+├──scripts
+├──styles
+
+
+TestProject     (项目名称)
+|–.git               通过git进行版本控制,项目自动生成这个文件
+|–node_modules       组件包目录
+|–dist               发布环境（编译自动生成的）
+    |–css                 样式文件(style.css style.min.css)
+    |–images              图片文件(压缩图片\合并后的图片)
+    |–js                  js文件(main.js main.min.js)
+    |–index.html          静态页面文件(压缩html)
+
+|–src                开发环境
+    |–sass                sass文件
+    |–images              图片文件
+    |–js                  js文件
+    |–index.html          静态文件
+|–gulpfile.js        gulp配置文件
+|–package.json       依赖模块json文件,在项目目录下npm install会安装项目所有的依赖模块，简化项目的安装程序
 ```
-### 引入依赖
+
+### 创建package.json
+
+我们先使用npm init来创建类似Nuget package的package.config一样的文件，这样我们就知道项目依赖哪些插件，而且我们不需要把插件提交到代码库，其它程序员只需要使用 npm install 就可以安装所有配置的插件
+
+```
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: (test) test                  //名称
+version: (1.0.0) 1.0.0             //版本
+description: test description      //描述
+entry point: (index.js)            //
+test command:                      //测试代码
+git repository:                    //Git版本库
+keywords:                          //关键词
+author: luuman                     //作者
+license: (ISC)                     //协议
+About to write to F:\Gulp\test\package.json:
+
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "luuman",
+  "license": "ISC"
+}
+
+Is this ok? (yes)
+
+```
+
+### 安装插件，加到项目依赖package.json中
 
 npm install gulp --save-dev //将具体的gulp功能插件局部安装项目下
 
 ```
 $ npm install gulp --save-dev
+
 npm WARN deprecated graceful-fs@3.0.8: graceful-fs version 3 and before will fail on newer node releases. Please update to graceful-fs@^4.0.0 as soon as possible.
 npm WARN deprecated lodash@1.0.2: lodash@<3.0.0 is no longer maintained. Upgrade to lodash@^4.0.0.
 npm WARN deprecated graceful-fs@1.2.3: graceful-fs version 3 and before will fail on newer node releases. Please update to graceful-fs@^4.0.0 as soon as possible.
 F:\Gulp\new
 └─┬ gulp@3.9.1
-  ├── archy@1.0.0
-  ├─┬ chalk@1.1.3
-  │ ├── ansi-styles@2.2.1
-  │ ├── escape-string-regexp@1.0.5
-  │ ├─┬ has-ansi@2.0.0
-  │ │ └── ansi-regex@2.0.0
-  │ ├── strip-ansi@3.0.1
-  │ └── supports-color@2.0.0
-  ├── deprecated@0.0.1
-  ├─┬ gulp-util@3.0.7
-  │ ├── array-differ@1.0.0
-  │ ├── array-uniq@1.0.2
-  │ ├── beeper@1.1.0
-  │ ├─┬ dateformat@1.0.12
-  │ │ ├── get-stdin@4.0.1
-  │ │ └─┬ meow@3.7.0
-  │ │   ├─┬ camelcase-keys@2.1.0
-  │ │   │ └── camelcase@2.1.1
-  │ │   ├── decamelize@1.2.0
-  │ │   ├─┬ loud-rejection@1.3.0
-  │ │   │ ├── array-find-index@1.0.1
-  │ │   │ └── signal-exit@2.1.2
-  │ │   ├── map-obj@1.0.1
-  │ │   ├─┬ normalize-package-data@2.3.5
-  │ │   │ ├── hosted-git-info@2.1.4
-  │ │   │ ├─┬ is-builtin-module@1.0.0
-  │ │   │ │ └── builtin-modules@1.1.1
-  │ │   │ └─┬ validate-npm-package-license@3.0.1
-  │ │   │   ├─┬ spdx-correct@1.0.2
-  │ │   │   │ └── spdx-license-ids@1.2.1
-  │ │   │   └─┬ spdx-expression-parse@1.0.2
-  │ │   │     └── spdx-exceptions@1.0.4
-  │ │   ├── object-assign@4.0.1
-  │ │   ├─┬ read-pkg-up@1.0.1
-  │ │   │ ├─┬ find-up@1.1.2
-  │ │   │ │ ├── path-exists@2.1.0
-  │ │   │ │ └─┬ pinkie-promise@2.0.0
-  │ │   │ │   └── pinkie@2.0.4
-  │ │   │ └─┬ read-pkg@1.1.0
-  │ │   │   ├─┬ load-json-file@1.1.0
-  │ │   │   │ ├── graceful-fs@4.1.3
-  │ │   │   │ ├─┬ parse-json@2.2.0
-  │ │   │   │ │ └─┬ error-ex@1.3.0
-  │ │   │   │ │   └── is-arrayish@0.2.1
-  │ │   │   │ ├── pify@2.3.0
-  │ │   │   │ └── strip-bom@2.0.0
-  │ │   │   └── path-type@1.1.0
-  │ │   ├─┬ redent@1.0.0
-  │ │   │ ├─┬ indent-string@2.1.0
-  │ │   │ │ └─┬ repeating@2.0.0
-  │ │   │ │   └─┬ is-finite@1.0.1
-  │ │   │ │     └── number-is-nan@1.0.0
-  │ │   │ └── strip-indent@1.0.1
-  │ │   └── trim-newlines@1.0.0
-  │ ├─┬ fancy-log@1.2.0
-  │ │ └── time-stamp@1.0.1
-  │ ├─┬ gulplog@1.0.0
-  │ │ └── glogg@1.0.0
-  │ ├─┬ has-gulplog@0.1.0
-  │ │ └── sparkles@1.0.0
-  │ ├── lodash._reescape@3.0.0
-  │ ├── lodash._reevaluate@3.0.0
-  │ ├── lodash._reinterpolate@3.0.0
-  │ ├─┬ lodash.template@3.6.2
-  │ │ ├── lodash._basecopy@3.0.1
-  │ │ ├── lodash._basetostring@3.0.1
-  │ │ ├── lodash._basevalues@3.0.0
-  │ │ ├── lodash._isiterateecall@3.0.9
-  │ │ ├─┬ lodash.escape@3.2.0
-  │ │ │ └── lodash._root@3.0.1
-  │ │ ├─┬ lodash.keys@3.1.2
-  │ │ │ ├── lodash._getnative@3.9.1
-  │ │ │ ├── lodash.isarguments@3.0.8
-  │ │ │ └── lodash.isarray@3.0.4
-  │ │ ├── lodash.restparam@3.6.1
-  │ │ └── lodash.templatesettings@3.1.1
-  │ ├─┬ multipipe@0.1.2
-  │ │ └─┬ duplexer2@0.0.2
-  │ │   └── readable-stream@1.1.13
-  │ ├── object-assign@3.0.0
-  │ ├── replace-ext@0.0.1
-  │ ├─┬ through2@2.0.1
-  │ │ ├─┬ readable-stream@2.0.6
-  │ │ │ ├── core-util-is@1.0.2
-  │ │ │ ├── inherits@2.0.1
-  │ │ │ ├── isarray@1.0.0
-  │ │ │ ├── process-nextick-args@1.0.6
-  │ │ │ ├── string_decoder@0.10.31
-  │ │ │ └── util-deprecate@1.0.2
-  │ │ └── xtend@4.0.1
-  │ └─┬ vinyl@0.5.3
-  │   ├── clone@1.0.2
-  │   └── clone-stats@0.0.1
-  ├── interpret@1.0.0
-  ├─┬ liftoff@2.2.1
-  │ ├── extend@2.0.1
-  │ ├─┬ findup-sync@0.3.0
-  │ │ └─┬ glob@5.0.15
-  │ │   ├── inflight@1.0.4
-  │ │   ├── minimatch@3.0.0
-  │ │   └── path-is-absolute@1.0.0
-  │ ├── flagged-respawn@0.3.2
-  │ ├── rechoir@0.6.2
-  │ └── resolve@1.1.7
-  ├── minimist@1.2.0
-  ├─┬ orchestrator@0.3.7
-  │ ├─┬ end-of-stream@0.1.5
-  │ │ └─┬ once@1.3.3
-  │ │   └── wrappy@1.0.1
-  │ ├── sequencify@0.0.7
-  │ └── stream-consume@0.1.0
-  ├── pretty-hrtime@1.0.2
-  ├── semver@4.3.6
-  ├─┬ tildify@1.1.2
-  │ └── os-homedir@1.0.1
-  ├─┬ v8flags@2.0.11
-  │ └── user-home@1.1.1
-  └─┬ vinyl-fs@0.3.14
-    ├── defaults@1.0.3
-    ├─┬ glob-stream@3.1.18
-    │ ├── glob@4.5.3
-    │ ├─┬ glob2base@0.0.12
-    │ │ └── find-index@0.1.1
-    │ ├─┬ minimatch@2.0.10
-    │ │ └─┬ brace-expansion@1.1.3
-    │ │   ├── balanced-match@0.3.0
-    │ │   └── concat-map@0.0.1
-    │ ├── ordered-read-streams@0.1.0
-    │ ├─┬ through2@0.6.5
-    │ │ └── readable-stream@1.0.33
-    │ └── unique-stream@1.0.0
-    ├─┬ glob-watcher@0.0.6
-    │ └─┬ gaze@0.5.2
-    │   └─┬ globule@0.1.0
-    │     ├─┬ glob@3.1.21
-    │     │ ├── graceful-fs@1.2.3
-    │     │ └── inherits@1.0.2
-    │     ├── lodash@1.0.2
-    │     └─┬ minimatch@0.2.14
-    │       ├── lru-cache@2.7.3
-    │       └── sigmund@1.0.1
-    ├── graceful-fs@3.0.8
-    ├─┬ mkdirp@0.5.1
-    │ └── minimist@0.0.8
-    ├─┬ strip-bom@1.0.0
-    │ ├── first-chunk-stream@1.0.0
-    │ └── is-utf8@0.2.1
-    ├─┬ through2@0.6.5
-    │ └─┬ readable-stream@1.0.33
-    │   └── isarray@0.0.1
-    └─┬ vinyl@0.4.6
-      └── clone@0.2.0
+```
 
+npm install gulp-sass --save-dev //将具体的gulp功能插件局部安装项目下
+
+```
+$ npm install gulp-sass --save-dev
 ```
 
 ### 安装gulp功能插件依赖包
@@ -284,47 +202,46 @@ F:\Gulp\new
 npm install gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename--save-dev
 gulp功能模块的文件会放在项目所在的目录的./node_modules 下
 
+
+### 引入插件包
+
+```
+npm install
+
+当package.json中已经有提示插件依赖包，node.js将会直接下载所有依赖插件包。
+```
+
 ### 简单的功能：
 
-gulp-jshint
-gulp-sass
-gulp-concat
-gulp-uglify
-- 检查Javascript
-- 编译Sass文件
-- 合并Javascript
-- 压缩合并并重命名Javascript
+| 插件 | 功能 |
+|  ---- | ---- |
+| gulp-imagemin:     | 压缩图片
+| gulp-ruby-sass:    | 支持sass，安装此版本需要安装ruby
+| gulp-minify-css:   | 压缩css
+| gulp-jshint:       | 检查js
+| gulp-uglify:       | 压缩js
+| gulp-concat:       | 合并文件
+| gulp-rename:       | 重命名文件
+| gulp-htmlmin:      | 压缩html
+| gulp-clean:        | 清空文件夹
+| gulp-livereload:   | 服务器控制客户端同步刷新（需配合chrome插件LiveReload及tiny-lr）
 
 #### gulp-jshint
 
+```
 luuman@luuman-PC MINGW64 /f/Gulp/new
 $ npm install gulp-jshint --save-dev
+
 F:\Gulp\new
 ├─┬ gulp@3.9.1
-│ └─┬ vinyl-fs@0.3.14
-│   ├─┬ glob-stream@3.1.18
-│   │ ├── minimatch@2.0.10
-│   │ └─┬ through2@0.6.5
-│   │   └── readable-stream@1.0.33
-│   └─┬ through2@0.6.5
-│     └── readable-stream@1.0.33
 ├─┬ gulp-jshint@2.0.0
-│ ├── lodash@3.10.1
-│ ├── minimatch@2.0.10
-│ ├─┬ rcloader@0.1.2
-│ │ ├── lodash@2.4.2
-│ │ └─┬ rcfinder@0.1.8
-│ │   └── lodash@2.4.2
-│ └─┬ through2@0.6.5
-│   └── readable-stream@1.0.33
-└── UNMET PEER DEPENDENCY jshint@2.x
 
-npm WARN EPEERINVALID gulp-jshint@2.0.0 requires a peer of jshint@2.x but none w                   as installed.
-
+npm WARN EPEERINVALID gulp-jshint@2.0.0 requires a peer of jshint@2.x but none was installed.
+```
 
 ### 补充：的前端开发软件环境
 
-```
+```text
 Node.Js、NPM、Ruby、Java        基础环境
 Sublime + 插件                  用于编写前端代码
 Chrome、Firefox + Firebug       浏览器

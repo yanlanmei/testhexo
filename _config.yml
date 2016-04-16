@@ -79,6 +79,7 @@ path: baidusitemap.xml
 deploy:
   type: git
   repository: git@github.com:luuman/luuman.github.io.git
+#    repository: https://github.com/luuman/luuman.github.io.git
   branch: master
 
 # Deployment 站点部署到github要配置，上一节中已经讲过
