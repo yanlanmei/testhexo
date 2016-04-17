@@ -170,7 +170,7 @@ baidushare: true
 google_site: # pFW527fHrjfI0si2w4NQ0w3cTw12AvvuohAu1PUfqKA
 baidu_site: #c167b9feb4f0b208b712c79629c188e4
 
-# Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X
+# Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X, or Baidu Analytics hash key
 google_analytics:  # UA-75679138-1
 baidu_analytics: 819b1c6493df653afb8c7846bc4b8db6 # enter Baidu Analytics hash key
 
