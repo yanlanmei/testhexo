@@ -310,6 +310,11 @@ it is caused by permission. just do 'sudo hexo b'
 sudo hexo b
 ```
 
+## 本地浏览
+
+hexo s
+hexo s --draf 浏览全部文章同时可以浏览不同目录中的文件
+
 # 参考资料：
 [使用GitHub搭建Hexo博客](http://luuman.github.io/2015/12/25/GitHub+Hexo/)
 [Hexo插件安装](http://luuman.github.io/2015/12/27/Hexo-plug/)

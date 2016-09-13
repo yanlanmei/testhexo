@@ -80,12 +80,12 @@ duoshuo:
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
 
 J:\Hexo\Hexo\themes\spfk\source\css\多说.css
-
-添加方法：
+```
+#### 添加方法：
 添加方法：打开「后台」 > 「多说评论」 > 「设置」 > 「基本设置」 > 然后把样式粘贴到「自定义CSS」文本框 > 「保存」
 
-具体样式请参照：[多说.css](https://github.com/luuman/Hexo/blob/master/themes/spfk/source/css/%E5%A4%9A%E8%AF%B4.css "CSS样式集合")
-```
+具体样式请参照：[多说.css](https://github.com/luuman/luuman.github.io/blob/master/resoures/%E5%A4%9A%E8%AF%B4.css "多说CSS样式集合")
+
 ### 头像
 
 ```
@@ -145,8 +145,11 @@ permalink:
 hexo new page 404
 And then set permalink: /404 in /source/404/index.md front matter.
 在 Hexo 中创建匹配主题的404页面
-
 ```
+[404.html](https://github.com/luuman/Hexo/blob/master/source/404/index.md "404")
+
+[about.html](https://github.com/luuman/Hexo/tree/master/source/about "about")
+
 ## 主题结构：
 
 ```
@@ -178,6 +181,10 @@ And then set permalink: /404 in /source/404/index.md front matter.
 最近，Waterstrong提交了一版，这版本可以将hexo布置在GitHub其下的其他项目，比如Blog等。但是还是有些东西需要修改。
 
 ```
+
+非常感谢Waterstrong
+
+
 # URL #这项暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://luuman.github.io/Blog/
@@ -195,5 +202,5 @@ deploy:
   repository: https://github.com/luuman/Blog.git
   branch: gh-pages
 ```
-
-非常感谢Waterstrong
+[Blog](http://luuman.github.com/Blog "Blog")
+[Blog](https://github.com/luuman/Blog "Blog of Waterstrong")

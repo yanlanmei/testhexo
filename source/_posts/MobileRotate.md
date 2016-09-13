@@ -159,3 +159,6 @@ function oInit(){
 }
 oInit();
 ```
+
+[Mobile Web开发基础之四————处理设备的横竖屏](http://blessdyb.iteye.com/blog/1537076 "window.orientation属性与onorientationchange事件")
+[检测移动设备横竖屏](http://www.cnblogs.com/xbf321/p/4081829.html "检测移动设备横竖屏")

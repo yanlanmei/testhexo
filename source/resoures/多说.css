@@ -444,13 +444,15 @@ span.ua {
 }
 #ds-thread #ds-reset .ds-replybox{
 	width: auto;
-	font-size: 12px;
-	z-index: 3;
-	margin: 8px 0;
-	position: relative;
-	padding: 0;
-	border: 1px solid #2F2F2F;
-	border-radius: 6px;
+  font-size: 12px;
+  z-index: 3;
+  margin: 8px 0;
+  position: relative;
+  padding: 0;
+  border: 1px solid #2F2F2F;
+  border-radius: 6px;
+  -webkit-box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
+  box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
 }
 #ds-thread #ds-reset .ds-replybox .ds-avatar{
 	display: none;
@@ -516,9 +518,6 @@ span.ua {
 #ds-thread #ds-reset .ds-comments{
 	background-color: #3F3F3F;
 }
-#ds-thread #ds-reset ul.ds-children {
-    margin-left: 70px;
-}
 #ds-reset .ds-avatar{
     background-color: rgba(255, 255, 255, 0);
 }
@@ -550,7 +549,7 @@ span.ua {
     background: -webkit-linear-gradient(top, #3F3F3F 0, #3F3F3F 100%);
     background: -ms-linear-gradient(top, #3F3F3F 0, #3F3F3F 100%);
     background: linear-gradient(top, #3F3F3F 0, #3F3F3F 100%);
-    
+
 }
 #ds-thread #ds-reset .ds-meta {
     border-bottom: 1px solid rgba(0, 0, 0, 0);
@@ -563,7 +562,7 @@ span.ua {
     padding: 0 12px;
 }
 #ds-thread #ds-reset #ds-hot-posts {
-     border: none; 
+     border: none;
 }
 
 /* 简介 */
@@ -679,4 +678,31 @@ span.ua {
 }
 #ds-wrapper #ds-reset .ds-unread-list li a[rel~="author"] {
     color: #FFF;
+}
+#ds-thread #ds-reset .ds-paginator div.ds-border {
+    border-top: 1px dashed #080808;
+    margin-bottom: 15px;
+}
+#ds-thread #ds-reset .ds-paginator {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    text-align: right;
+    padding-bottom: 15px;
+    clear: both;
+    line-height: 1em;
+}
+#ds-thread #ds-reset .ds-paginator a.ds-current {
+    color: #FFFFFF;
+    border: 1px solid #2F2F2F;
+    background-color: #2F2F2F;
+    border-radius: 4px;
+}
+#ds-thread #ds-reset .ds-post-toolbar {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+#ds-thread #ds-reset ul.ds-children {
+    margin-left: 70px;
 }

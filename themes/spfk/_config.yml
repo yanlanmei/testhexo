@@ -24,13 +24,13 @@ favicon: /img/favicon.png
 ## RSS requires a plugin to take effect | 使用 RSS 需先安装对应插件
 ## https://github.com/hexojs/hexo-generator-feed
 subnav:
-  mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E"
+  # mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E"
   github: "https://github.com/luuman"
   zhihu: "https://www.zhihu.com/people/luuman"
   weibo: "http://weibo.com/lishangmou"
   google: "http://i.youku.com/shangmou"
   twitter: "http: //twitter.com/luuman"
-  facebook: "#"
+  # facebook: "#"
   rss: /atom.xml
   # linkedin: "https://www.linkedin.com/in/%E5%BF%A0%E6%88%90-%E6%9D%8E-a48562b1"
   # douban: "#"
@@ -137,6 +137,8 @@ friends:
   潘利强: http://www.plqblog.com/views/index.php
   hankin: http://www.hankin.cn/
   waydrow: http://blog.waydrow.com/
+  莫与: http://dongshuyan.top/
+  
 
 #是否开启“关于我”。
 aboutme: 纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中

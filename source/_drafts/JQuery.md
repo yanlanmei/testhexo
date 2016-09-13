@@ -14,7 +14,17 @@ permalink:
 
 　　**自用笔记：**本文属于自用笔记，不做详解，仅供参考。在此记录自己已理解并开始遵循的前端代码规范。What How Why
 <!-- more -->
-[]()
+
+
+## function
+
+$(window).load(function(){}
+$(window).on('load', function(){}
+
+
+[]( "")
+
+
 
 console.log("左面" + "天");
 ## jquery如何判断checkbox（复选框）是否被选中

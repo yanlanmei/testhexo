@@ -74,6 +74,9 @@ a{
 -webkit-tap-highlight-color:rgba(255,0,0,0);
 }
 
+/*删除线*/
+text-decoration: line-through;
+
 
 
 /* 内容将在边界内换行 */
